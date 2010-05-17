@@ -1,7 +1,10 @@
 Scorm2Fedora
 ============
 
-A web application that accepts a SCORM package and deposits it into a Fedora repository.
+A web application that accepts a SCORM package and deposits it into a Fedora 
+repository. The new Fedora object contains the original SCORM package as a 
+datastream and updates the Fedora object's DC datastream with a crosswalk of the
+SCORM package's IMS Metadata.
 
 Requirements
 ------------
@@ -22,7 +25,12 @@ Installation
         cd scorm2fedora
         mvn package -DskipTests
 
-3. Deploy the war (scorm2fedora-webapp/target/scorm2fedora.war) to a servlet container
+3. Deploy the war to a servlet container, e.g.:
+
+        cp scorm2fedora-webapp/target/scorm2fedora.war /opt/tomcat/webapps
+        
+4. Assuming the scorm2fedora is now available at http://example.org/scorm2fedora,
+   SCORM packages can be POSTed to http://example.org/scorm2fedora
 
 Configuration
 -------------
@@ -40,7 +48,7 @@ are supported:
 * baseUrl
     * The baseUrl of the Fedora Repository, e.g. http://example.org:8080/fedora
 * namespace
-    *
+    * pid namespace for newly created Fedora objects, e.g. scorm
 * scorm.dsid
     * The datastream id for the original SCORM package
 * cmodel
