@@ -28,8 +28,10 @@ public class FedoraClientTest {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		credentials = new FedoraCredentials(new URL(
-				"http://localhost:8080/fedora"), "fedoraAdmin", "fedoraAdmin");
+		String baseUrl = System.getProperty("fedora.test.baseUrl");
+		String username = System.getProperty("fedora.test.username");
+		String password = System.getProperty("fedora.test.password");
+		credentials = new FedoraCredentials(new URL(baseUrl), username, password);
 	}
 	
 	@Before
