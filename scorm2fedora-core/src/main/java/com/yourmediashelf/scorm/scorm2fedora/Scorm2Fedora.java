@@ -146,9 +146,6 @@ public class Scorm2Fedora {
 				queryParams.put("namespace", namespace);
 			}
 			ClientResponse response = client.ingest(null, queryParams, null);
-			if (response.getStatus() != HttpURLConnection.HTTP_CREATED) {
-				// FIXME FedoraClient should be throwing exceptions for 400 and above
-			}
 			pid = response.getEntity(String.class);
 			location = response.getLocation();
 
