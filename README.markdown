@@ -36,8 +36,7 @@ Configuration
 -------------
 
 Scorm2Fedora supports configuration by web.xml init-params and Java properties files.
-The web.xml init-params take precedence. The following configuration parameters 
-are supported:
+The following configuration parameters are supported:
 
 * username
     * The username Scorm2Fedora should use to connect to the Fedora Repository, 
@@ -54,6 +53,8 @@ are supported:
 * cmodel
     * The URI of the content model new objects subscribe to, e.g. info:fedora/foo:bar
 
+If the web.xml init-params are not present, configuration will fall back to 
+the scorm2fedora.properties file located in the scorm2fedora-core jar file.
 
 Copyright
 ---------
