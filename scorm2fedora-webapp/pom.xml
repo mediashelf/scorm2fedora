@@ -35,6 +35,9 @@
         <configuration>
           <systemPropertyVariables>
             <!--<jersey.test.port>8080</jersey.test.port>-->
+            <fedora.test.baseUrl>http://localhost:8080/fedora</fedora.test.baseUrl>
+            <fedora.test.username>fedoraAdmin</fedora.test.username>
+            <fedora.test.password>fedoraAdmin</fedora.test.password>
           </systemPropertyVariables>
         </configuration>
       </plugin>

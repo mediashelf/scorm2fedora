@@ -13,8 +13,6 @@ import javax.ws.rs.core.MediaType;
 
 import org.junit.Test;
 
-import com.sun.jersey.api.client.Client;
-import com.sun.jersey.api.client.WebResource;
 import com.sun.jersey.multipart.FormDataMultiPart;
 import com.sun.jersey.multipart.MultiPart;
 import com.sun.jersey.multipart.file.FileDataBodyPart;
@@ -33,12 +31,14 @@ import eu.medsea.mimeutil.MimeUtil2;
 public class Scorm2FedoraResourceTest extends JerseyTest {
 
 	public Scorm2FedoraResourceTest() {
-		super(new WebAppDescriptor.Builder(
-				"com.yourmediashelf.scorm.scorm2fedora").contextPath(
-				"scorm2fedora").initParam("username", "fedoraAdmin").initParam(
-				"password", "fedoraAdmin").initParam("baseUrl",
-				"http://localhost:8080/fedora").initParam("namespace", "scorm")
-				.build());
+		super(new WebAppDescriptor
+			.Builder("com.yourmediashelf.scorm.scorm2fedora")
+			.contextPath("scorm2fedora")
+			.initParam("username", System.getProperty("fedora.test.username"))
+			.initParam("password", System.getProperty("fedora.test.password"))
+			.initParam("baseUrl", System.getProperty("fedora.test.baseUrl"))
+			.initParam("namespace", "scorm")
+			.build());
 	}
 
 	@Test
@@ -53,15 +53,15 @@ public class Scorm2FedoraResourceTest extends JerseyTest {
 				mimeUtil.getMimeTypes(pkg)).toString();
 		assertEquals("application/zip", mimeType);
 
-		Client client = Client.create();
-		//client.addFilter(new LoggingFilter());
-		WebResource wr = client.resource("http://localhost:8080/scorm2fedora");
+		//client().addFilter(new LoggingFilter());
 		MultiPart multiPart = new FormDataMultiPart()
 				.bodyPart(new FileDataBodyPart("file", pkg, MediaType
 						.valueOf(mimeType)));
 
-		ScormDeposit response = wr.type(MediaType.MULTIPART_FORM_DATA).accept(
-				MediaType.APPLICATION_JSON).post(ScormDeposit.class, multiPart);
+		ScormDeposit response = resource()
+			.type(MediaType.MULTIPART_FORM_DATA)
+			.accept(MediaType.APPLICATION_JSON)
+			.post(ScormDeposit.class, multiPart);
 		// The location (e.g. http://localhost:8080/fedora/objects/scorm%3A5), 
 		// once decoded, should contain the pid (e.g. scorm:5)
 		assertTrue(URLDecoder.decode(response.location.toString(), "UTF-8").contains(response.pid));
