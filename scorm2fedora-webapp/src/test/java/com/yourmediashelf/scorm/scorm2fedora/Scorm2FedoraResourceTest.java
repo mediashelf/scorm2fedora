@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.yourmediashelf.scorm.scorm2fedora;
 
@@ -22,11 +22,11 @@ import com.sun.jersey.test.framework.WebAppDescriptor;
 import eu.medsea.mimeutil.MimeUtil2;
 
 /**
- * Integration test for the Scorm2Fedora Web Service. This test requires a 
+ * Integration test for the Scorm2Fedora Web Service. This test requires a
  * running instance of Fedora.
- * 
+ *
  * @author Edwin Shin
- * 
+ *
  */
 public class Scorm2FedoraResourceTest extends JerseyTest {
 
@@ -37,7 +37,7 @@ public class Scorm2FedoraResourceTest extends JerseyTest {
 			.initParam("username", System.getProperty("fedora.test.username"))
 			.initParam("password", System.getProperty("fedora.test.password"))
 			.initParam("baseUrl", System.getProperty("fedora.test.baseUrl"))
-			.initParam("namespace", "scorm")
+			.initParam("namespace", "scorm-test")
 			.build());
 	}
 
@@ -62,7 +62,7 @@ public class Scorm2FedoraResourceTest extends JerseyTest {
 			.type(MediaType.MULTIPART_FORM_DATA)
 			.accept(MediaType.APPLICATION_JSON)
 			.post(ScormDeposit.class, multiPart);
-		// The location (e.g. http://localhost:8080/fedora/objects/scorm%3A5), 
+		// The location (e.g. http://localhost:8080/fedora/objects/scorm%3A5),
 		// once decoded, should contain the pid (e.g. scorm:5)
 		assertTrue(URLDecoder.decode(response.location.toString(), "UTF-8").contains(response.pid));
 	}

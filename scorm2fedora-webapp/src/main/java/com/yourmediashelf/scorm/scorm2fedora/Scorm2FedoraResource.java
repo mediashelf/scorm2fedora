@@ -5,11 +5,9 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Properties;
 
-import javax.annotation.PostConstruct;
 import javax.servlet.ServletConfig;
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -30,7 +28,7 @@ import com.yourmediashelf.fedora.client.FedoraClientException;
 
 /**
  * A web service wrapper for Scorm2Fedora.
- * 
+ *
  * @author Edwin Shin
  *
  */
@@ -38,33 +36,32 @@ import com.yourmediashelf.fedora.client.FedoraClientException;
 public class Scorm2FedoraResource {
 	private final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(this.getClass());
 
-	private Scorm2Fedora s2f;
+	private final Scorm2Fedora s2f;
 	@Context ServletConfig sc;
-	
-	@PostConstruct
-	public void postConstruct() {
-		Properties props = null;
-		if (sc != null && sc.getInitParameter("baseUrl") != null) {
-			logger.debug("Using web.xml init-params for configuration");
-			props = new Properties();
-			String[] pnames = {"username", "password", "baseUrl", "namespace", "scorm.dsid", "cmodel"};
-			for (String pname : pnames) {
-				String pval = sc.getInitParameter(pname);
-				if (pval == null) {
-					logger.warn("init-param {} is null", pname);
-				} else {
-					props.setProperty(pname, pval);
-				}
-			}
-		} else {
-			logger.debug("configuration init-params not found. Using default properties.");
-		}
-		s2f = new Scorm2Fedora(props);
+
+	public Scorm2FedoraResource(@Context ServletConfig sc) {
+	    Properties props = null;
+        if (sc != null && sc.getInitParameter("baseUrl") != null) {
+            logger.debug("Using web.xml init-params for configuration");
+            props = new Properties();
+            String[] pnames = {"username", "password", "baseUrl", "namespace", "scorm.dsid", "cmodel"};
+            for (String pname : pnames) {
+                String pval = sc.getInitParameter(pname);
+                if (pval == null) {
+                    logger.warn("init-param {} is null", pname);
+                } else {
+                    props.setProperty(pname, pval);
+                }
+            }
+        } else {
+            logger.debug("configuration init-params not found. Using default properties.");
+        }
+        s2f = new Scorm2Fedora(props);
 	}
-	
+
 	/**
 	 * Deposits a SCORM 1.2 package with IMS Metadata into a Fedora repository.
-	 * 
+	 *
 	 * @param request the multipart/form-data request that contains the SCORM
 	 * package
 	 * @return the pid and location (URI) of the newly created Fedora object.
@@ -97,7 +94,7 @@ public class Scorm2FedoraResource {
 					logger.debug("Ignoring form field \"{}\".", name);
 					stream.close();
 				} else {
-					logger.debug("Found file field {} with file name \"{}\".", 
+					logger.debug("Found file field {} with file name \"{}\".",
 							name, item.getName());
 					return s2f.deposit(stream, item.getName());
 				}
@@ -123,7 +120,7 @@ public class Scorm2FedoraResource {
 
 	/**
 	 * Placeholder for future implementation
-	 * 
+	 *
 	 * @param imsmd
 	 * @param oaidc
 	 * @throws CrosswalkException

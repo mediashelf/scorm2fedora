@@ -69,9 +69,11 @@
         <version>2.5</version>
         <configuration>
           <systemPropertyVariables>
-            <fedora.test.baseUrl>http://localhost:8080/fedora</fedora.test.baseUrl>
+            <fedora.test.baseUrl>https://localhost:8443/fedora</fedora.test.baseUrl>
             <fedora.test.username>fedoraAdmin</fedora.test.username>
             <fedora.test.password>fedoraAdmin</fedora.test.password>
+            <javax.net.ssl.trustStore>/opt/fedora/current/server/truststore</javax.net.ssl.trustStore>
+            <javax.net.ssl.trustStorePassword>tomcat</javax.net.ssl.trustStorePassword>
           </systemPropertyVariables>
         </configuration>
       </plugin>
@@ -121,12 +123,6 @@
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>com.sun.jersey.jersey-test-framework</groupId>
-        <artifactId>jersey-test-framework-grizzly</artifactId>
-        <version>${jersey.version}</version>
-        <scope>test</scope>
-      </dependency>
-	  <dependency>
         <groupId>com.sun.jersey.jersey-test-framework</groupId>
         <artifactId>jersey-test-framework-grizzly</artifactId>
         <version>${jersey.version}</version>

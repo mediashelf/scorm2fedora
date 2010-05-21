@@ -1,5 +1,9 @@
 package com.yourmediashelf.scorm.scorm2fedora;
 
+import static com.yourmediashelf.fedora.client.request.FedoraRequest.addDatastream;
+import static com.yourmediashelf.fedora.client.request.FedoraRequest.ingest;
+import static com.yourmediashelf.fedora.client.request.FedoraRequest.modifyDatastream;
+
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -7,13 +11,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 import java.util.zip.ZipEntry;
@@ -27,27 +28,28 @@ import com.yourmediashelf.fedora.client.FedoraClient;
 import com.yourmediashelf.fedora.client.FedoraClientException;
 import com.yourmediashelf.fedora.client.FedoraCredentials;
 import com.yourmediashelf.fedora.client.RelsExt;
+import com.yourmediashelf.fedora.client.request.FedoraRequest;
 import com.yourmediashelf.util.FileUtils;
 
 /**
  * Scorm2Fedora accepts a SCORM 1.2 package with IMS Metadata and deposits it
- * into a Fedora repository. The IMS Metadata is converted into Dublin Core and 
+ * into a Fedora repository. The IMS Metadata is converted into Dublin Core and
  * made available the Fedora object's DC datastream.
- * 
+ *
  * @author Edwin Shin
  *
  */
 public class Scorm2Fedora {
 	private final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(this.getClass());
 
-	private Properties props;
-	private FedoraClient client;
+	private final Properties props;
+	private final FedoraClient fedora;
 
 	/**
 	 * Configuration properties
 	 * <dl>
 	 *   <dt>username
-	 *   <dd>username for the Fedora repository to be used by Scorm2Fedora to 
+	 *   <dd>username for the Fedora repository to be used by Scorm2Fedora to
 	 *   deposit SCORM packages.
 	 *   <dt>password
 	 *   <dd>password for the Fedora user
@@ -60,7 +62,7 @@ public class Scorm2Fedora {
 	 *   <dt>scorm.dsid
 	 *   <dd>The datastream ID for the SCORM package (e.g. SCORM)
 	 * </dl>
-	 * 
+	 *
 	 * @param props configuration properties
 	 */
 	public Scorm2Fedora(Properties props) {
@@ -74,7 +76,7 @@ public class Scorm2Fedora {
 			}
 		}
 		this.props = props;
-		
+
 		String username = props.getProperty("username", "fedoraAdmin");
 		String password = props.getProperty("password", "fedoraAdmin");
 		URL baseUrl;
@@ -85,12 +87,12 @@ public class Scorm2Fedora {
 			throw new IllegalArgumentException("Malformed baseUrl: "
 					+ e.getMessage(), e);
 		}
-		client = new FedoraClient(new FedoraCredentials(baseUrl, username,
+		fedora = new FedoraClient(new FedoraCredentials(baseUrl, username,
 				password));
 	}
-	
+
 	/**
-	 * 
+	 *
 	 * @param in the SCORM package
 	 * @param filename filename of the SCORM package, used as the dsLabel
 	 * @return
@@ -100,7 +102,7 @@ public class Scorm2Fedora {
 	 */
 	public ScormDeposit deposit(InputStream in, String filename) throws IOException, CrosswalkException, FedoraClientException {
 		Set<File> tempFiles = new HashSet<File>();
-		
+
 		String pid = null;
 		URI location = null;
 		try {
@@ -110,7 +112,7 @@ public class Scorm2Fedora {
 			OutputStream fout = new FileOutputStream(scorm);
 			FileUtils.copy(in, fout);
 			in.close();
-			
+
 			// extract the manifest
 			in = new BufferedInputStream(new FileInputStream(scorm));
 			ZipInputStream zin = new ZipInputStream(in);
@@ -128,7 +130,7 @@ public class Scorm2Fedora {
 			if (manifest == null) {
 				throw new IllegalArgumentException("package has no manifest!");
 			}
-			
+
 			// convert manifest's metadata to oai_dc
 			in = new FileInputStream(manifest);
 			File oaidc = File.createTempFile("oaidc", null);
@@ -137,39 +139,33 @@ public class Scorm2Fedora {
 			imsmd2oaidc(in, out);
 			in.close();
 			out.close();
-			
+
 			// create new fedora object
 			String namespace = props.getProperty("namespace");
-			Map<String, String> queryParams = null;
-			if (namespace != null && !namespace.isEmpty()) {
-				queryParams = new HashMap<String, String>();
-				queryParams.put("namespace", namespace);
-			}
-			ClientResponse response = client.ingest(null, queryParams, null);
+			FedoraRequest ingest = ingest(pid).namespace(namespace).build();
+			ClientResponse response = fedora.execute(ingest);
+
 			pid = response.getEntity(String.class);
 			location = response.getLocation();
 
 			// add original scorm package as datastream
 			String dsId = props.getProperty("scorm.dsid", "SCORM");
-			queryParams = new HashMap<String, String>();
-			queryParams.put("controlGroup", "M");
-			if (filename != null && !filename.isEmpty()) {
-				queryParams.put("dsLabel", filename);
-			}
-			client.addDatastream(pid, dsId, queryParams, scorm);
+			FedoraRequest addScorm = addDatastream(pid, dsId)
+			    .controlGroup("M").dsLabel(filename).content(scorm).build();
+			fedora.execute(addScorm);
 
 			// update DC datastream with new oai_dc
-			client.modifyDatastream(pid, "DC", null, oaidc);
+			fedora.execute(modifyDatastream(pid, "DC").content(oaidc).build());
 
 			// Add content model to RELS-EXT
 			String cmodel = props.getProperty("cmodel");
 			String relsExt = new RelsExt.Builder(pid).cmodel(cmodel).build().toString();
-			queryParams = new HashMap<String, String>();
-			queryParams.put("dsLabel", "RDF Statements about this object");
-			queryParams.put("formatURI", "info:fedora/fedora-system:FedoraRELSExt-1.0");
-			queryParams.put("mimeType", "application/rdf+xml");
-			
-			client.addDatastream(pid, "RELS-EXT", null, relsExt);	
+			FedoraRequest addRelsExt = addDatastream(pid, "RELS-EXT")
+			    .dsLabel("RDF Statements about this object")
+			    .formatURI("info:fedora/fedora-system:FedoraRELSExt-1.0")
+			    .mimeType("application/rdf+xml").content(relsExt).build();
+			fedora.execute(addRelsExt);
+
 		} finally {
 			for (File f : tempFiles) {
 				f.delete();
@@ -179,9 +175,9 @@ public class Scorm2Fedora {
 	}
 
 	/**
-	 * Crosswalks IMS Metadata to OAI DC per the IMS Learning Resource Meta-Data 
+	 * Crosswalks IMS Metadata to OAI DC per the IMS Learning Resource Meta-Data
 	 * Best Practice and Implementation Guide, Version 1.2.1 Final Specification.
-	 * 
+	 *
 	 * @param imsmd
 	 * @param oaidc
 	 * @throws CrosswalkException

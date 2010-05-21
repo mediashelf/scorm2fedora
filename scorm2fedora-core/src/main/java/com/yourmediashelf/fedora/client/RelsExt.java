@@ -5,15 +5,17 @@ import java.util.Set;
 
 /**
  * A builder for a Fedora 3.x RELS-EXT datastream.
- * 
+ * Once support for the relationships is added to Fedora's REST API, this class
+ * can go away.
+ *
  * @author Edwin Shin
  *
  */
 public class RelsExt {
 	public static class Builder {
-		private String pid;
-		private Set<String> cmodels = new HashSet<String>();
-		
+		private final String pid;
+		private final Set<String> cmodels = new HashSet<String>();
+
 		public Builder(String pid) {
 			if (pid.startsWith("info:fedora/")) {
 				pid = pid.substring(12);
@@ -21,13 +23,13 @@ public class RelsExt {
 			this.pid = pid;
 			cmodels.add("info:fedora/fedora-system:ContentModel-3.0");
 		}
-		
+
 		public RelsExt build() {
 			RelsExt result = new RelsExt(pid);
 			result.cmodels = cmodels;
 			return result;
 		}
-		
+
 		public Builder cmodel(String cmodel) {
 			if (cmodel == null) {
 				return this;
@@ -39,15 +41,16 @@ public class RelsExt {
 			return this;
 		}
 	}
-	
-	private String pid;
+
+	private final String pid;
 	private Set<String> cmodels = new HashSet<String>();
-	
+
 	private RelsExt(String pid) {
 		this.pid = pid;
 	}
-	
-	public String toString() {
+
+	@Override
+    public String toString() {
 		String cmodelStatements = "";
 		for (String cmodel : cmodels) {
 			cmodelStatements += String
@@ -61,11 +64,11 @@ public class RelsExt {
 			   "  </rdf:Description>" +
 			   "</rdf:RDF>", pid, cmodelStatements);
 	}
-	
+
 	public String getPid() {
 		return pid;
 	}
-	
+
 	public Set<String> getCmodels() {
 		return cmodels;
 	}
