@@ -15,6 +15,11 @@
 
   <dependencies>
     <dependency>
+        <groupId>com.yourmediashelf.fedora.client</groupId>
+        <artifactId>fedora-client</artifactId>
+        <version>0.0.2-SNAPSHOT</version>
+    </dependency>
+    <dependency>
       <groupId>net.sourceforge.saxon</groupId>
       <artifactId>saxon</artifactId>
       <version>9.1.0.8</version>

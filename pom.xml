@@ -144,5 +144,27 @@
       <url>http://download.java.net/maven/2/</url>
       <layout>default</layout>
     </repository>
+    <repository>
+      <id>duraspace-thirdparty</id>
+      <name>Duraspace Thirdparty Maven Repository</name>
+      <url>https://fedora-commons.org/m2/content/repositories/thirdparty</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>duraspace-snapshots</id>
+      <name>DuraSpace Snapshots Maven Repository</name>
+      <url>https://fedora-commons.org/m2/content/repositories/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
   </repositories>
 </project>
