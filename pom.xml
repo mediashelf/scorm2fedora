@@ -20,8 +20,8 @@
 
   <licenses>
     <license>
-      <name>Apache License, Version 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <name>GNU General Public License, Version 3.0</name>
+      <url>http://www.gnu.org/licenses/gpl.html</url>
       <comments>Copyright (c) 2010 MediaShelf</comments>
     </license>
   </licenses>
