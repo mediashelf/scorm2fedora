@@ -1,4 +1,9 @@
-Introduction
+    ---
+    Introduction
+    ---
+    Edwin Shin
+    ---
 
     {{{http://www.github.com/mediashelf/scorm2fedora}scorm2fedora}} is a web
-service that deposits SCORM packages in a Fedora repository.
+service that accepts SCORM packages, and in turn, deposits them in a Fedora 
+repository.
