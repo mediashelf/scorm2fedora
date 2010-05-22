@@ -12,7 +12,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>MediaShelf fedora-client - Usage</title>
+    <title>MediaShelf scorm2fedora - Usage</title>
     <style type="text/css" media="all">
       @import url("./css/maven-base.css");
       @import url("./css/maven-theme.css");
@@ -176,9 +176,43 @@
     <div id="bodyColumn">
       <div id="contentBox">
         <div class="section"><h2>Usage</h2>
-<p>See the scorm2fedora GitHub project page to download the scorm2fedora webapp, instructions to build scorm2fedora from source as well as the configuration options for the scorm2fedora webapp.</p>
-<p>At a minimum you will need to configure scorm2fedora so that it can authenticate itself with your Fedora repository.</p>
+<p>See the scorm2fedora GitHub <a href="http://github.com/mediashelf/scorm2fedora/" class="externalLink">project page</a> to download the scorm2fedora webapp.</p>
+<p>At a minimum you will need to configure scorm2fedora so that it can authenticate itself against your Fedora repository.</p>
 <p>Once scorm2fedora has been configured and deployed to your servlet container, SCORM packages can be submitted using HTTP POST requests to the scorm2fedora service endpoint (e.g. http://example.org:8080/scorm2fedora). That's it!</p>
+<div class="section"><h3>Configuration</h3>
+<p>Scorm2Fedora supports configuration by web.xml init-params and Java properties files. The following configuration parameters are supported:</p>
+<ul><li>username * The username Scorm2Fedora should use to connect to the Fedora Repository, e.g. fedoraAdmin * password * The password Scorm2Fedora should use to connect to the Fedora Repository, e.g. fedoraAdmin * baseUrl * The baseUrl of the Fedora Repository, e.g. http://example.org:8080/fedora * namespace * pid namespace for newly created Fedora objects, e.g. scorm * scorm.dsid * The datastream id for the original SCORM package * cmodel * The URI of the content model new objects subscribe to, e.g. info:fedora/foo:bar<p>If the web.xml init-params are not present, configuration will fall back to the scorm2fedora.properties file located in the scorm2fedora-core jar file.</p>
+</li>
+</ul>
+</div>
+<div class="section"><h3>SSL</h3>
+<p>If the target Fedora repository requires SSL, scorm2fedora expects the following Java system properties to be available: </p>
+<ul><li>javax.net.ssl.trustStore</li>
+<li>javax.net.ssl.trustStorePassword<p>Note: if the scorm2fedora webapp is deployed to the same container as Fedora, these properties should already be set and available.</p>
+</li>
+</ul>
+</div>
+<div class="section"><h3>Including scorm2fedora in your Maven2 project</h3>
+<p>Add the following to your pom.xml (you should only need to explicitly add one of dependencies below, depending on which artifact you want, the jar (core) or the war (webapp)):</p>
+<div class="source"><pre>&lt;repository&gt;
+    &lt;id&gt;duraspace-thirdparty&lt;/id&gt;
+    &lt;name&gt;Duraspace Thirdparty Maven Repository&lt;/name&gt;
+    &lt;url&gt;https://fedora-commons.org/m2/content/repositories/thirdparty&lt;/url&gt;
+&lt;/repository&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;com.yourmediashelf.fedora.client&lt;/groupId&gt;
+    &lt;artifactId&gt;scorm2fedora-core&lt;/artifactId&gt;
+    &lt;version&gt;0.0.1&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;com.yourmediashelf.fedora.client&lt;/groupId&gt;
+    &lt;artifactId&gt;scorm2fedora-webapp&lt;/artifactId&gt;
+    &lt;version&gt;0.0.1&lt;/version&gt;
+&lt;/dependency&gt;</pre>
+</div>
+</div>
 </div>
 
       </div>
