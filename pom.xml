@@ -111,7 +111,7 @@
     </connection>
     <developerConnection>scm:git:git@github.com:mediashelf/scorm2fedora.git
     </developerConnection>
-    <url>http://github.com/mediashelf/scorm-fedora</url>
+    <url>http://github.com/mediashelf/scorm2fedora</url>
   </scm>
   <distributionManagement>
     <repository>
@@ -125,8 +125,12 @@
       <url>https://fedora-commons.org/m2/content/repositories/snapshots</url>
     </snapshotRepository>
     <site>
+      <!-- 
       <id>gh-pages</id>
       <url>gitsite:git@github-mshlf/mediashelf/scorm2fedora.git</url>
+      -->
+      <id>local filesystem</id>
+      <url>file:///tmp/scorm</url>
     </site>
   </distributionManagement>
 
