@@ -181,7 +181,24 @@
 <p>Once scorm2fedora has been configured and deployed to your servlet container, SCORM packages can be submitted using HTTP POST requests to the scorm2fedora service endpoint (e.g. http://example.org:8080/scorm2fedora). That's it!</p>
 <div class="section"><h3>Configuration</h3>
 <p>Scorm2Fedora supports configuration by web.xml init-params and Java properties files. The following configuration parameters are supported:</p>
-<ul><li>username * The username Scorm2Fedora should use to connect to the Fedora Repository, e.g. fedoraAdmin * password * The password Scorm2Fedora should use to connect to the Fedora Repository, e.g. fedoraAdmin * baseUrl * The baseUrl of the Fedora Repository, e.g. http://example.org:8080/fedora * namespace * pid namespace for newly created Fedora objects, e.g. scorm * scorm.dsid * The datastream id for the original SCORM package * cmodel * The URI of the content model new objects subscribe to, e.g. info:fedora/foo:bar<p>If the web.xml init-params are not present, configuration will fall back to the scorm2fedora.properties file located in the scorm2fedora-core jar file.</p>
+<ul><li>username<ul><li>The username Scorm2Fedora should use to connect to the Fedora Repository, e.g. fedoraAdmin</li>
+</ul>
+</li>
+<li>password<ul><li>The password Scorm2Fedora should use to connect to the Fedora Repository, e.g. fedoraAdmin</li>
+</ul>
+</li>
+<li>baseUrl<ul><li>The baseUrl of the Fedora Repository, e.g. http://example.org:8080/fedora</li>
+</ul>
+</li>
+<li>namespace<ul><li>pid namespace for newly created Fedora objects, e.g. scorm</li>
+</ul>
+</li>
+<li>scorm.dsid<ul><li>The datastream id for the original SCORM package</li>
+</ul>
+</li>
+<li>cmodel<ul><li>The URI of the content model new objects subscribe to, e.g. info:fedora/foo:bar</li>
+</ul>
+<p>If the web.xml init-params are not present, configuration will fall back to the scorm2fedora.properties file located in the scorm2fedora-core jar file.</p>
 </li>
 </ul>
 </div>
