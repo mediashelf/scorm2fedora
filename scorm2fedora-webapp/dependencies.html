@@ -1,0 +1,682 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Scorm2Fedora Webapp - Project Dependencies</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                    <span id="bannerLeft">
+    
+            Scorm2Fedora Webapp
+    
+            </span>
+                    <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2010-05-22
+                      </div>
+            <div class="xright">            <a href="">Scorm2Fedora Webapp</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                             <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+            
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+            <li class="expanded">
+                    <a href="project-info.html">Project Information</a>
+                  <ul>
+                  
+    <li class="none">
+                    <a href="index.html">About</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="integration.html">Continuous Integration</a>
+          </li>
+                  
+    <li class="none">
+              <strong>Dependencies</strong>
+        </li>
+                  
+    <li class="none">
+                    <a href="dependency-convergence.html">Dependency Convergence</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="issue-tracking.html">Issue Tracking</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="mail-lists.html">Mailing Lists</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="license.html">Project License</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="project-summary.html">Project Summary</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="team-list.html">Project Team</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="source-repository.html">Source Repository</a>
+          </li>
+              </ul>
+        </li>
+              
+                
+              
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-reports.html">Project Reports</a>
+                </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>Project Dependencies</h2>
+<div class="section"><h3>compile</h3>
+<p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Classifier</th>
+<th>Type</th>
+<th>Optional</th>
+</tr>
+<tr class="b"><td>com.sun.jersey</td>
+<td>jersey-json</td>
+<td>1.2</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="a"><td>com.sun.jersey.contribs</td>
+<td>jersey-multipart</td>
+<td>1.2</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="b"><td>com.yourmediashelf.scorm</td>
+<td>scorm2fedora-core</td>
+<td>0.0.2-SNAPSHOT</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="a"><td>commons-fileupload</td>
+<td>commons-fileupload</td>
+<td>1.2.1</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="b"><td>eu.medsea.mimeutil</td>
+<td>mime-util</td>
+<td>2.1.3</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>test</h3>
+<p>The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Classifier</th>
+<th>Type</th>
+<th>Optional</th>
+</tr>
+<tr class="b"><td>com.sun.jersey.jersey-test-framework</td>
+<td>jersey-test-framework-grizzly</td>
+<td>1.2</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>provided</h3>
+<p>The following is a list of provided dependencies for this project. These dependencies are required to compile the application, but should be provided by default when using the library:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Classifier</th>
+<th>Type</th>
+<th>Optional</th>
+</tr>
+<tr class="b"><td>javax.servlet</td>
+<td>servlet-api</td>
+<td>2.5</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+</table>
+</div>
+</div>
+<div class="section"><h2>Project Transitive Dependencies</h2>
+<p>The following is a list of transitive dependencies for this project. Transitive dependencies are the dependencies of the project dependencies.</p>
+<div class="section"><h3>compile</h3>
+<p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Classifier</th>
+<th>Type</th>
+<th>Optional</th>
+</tr>
+<tr class="b"><td>asm</td>
+<td>asm</td>
+<td>3.1</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="a"><td>com.sun.jersey</td>
+<td>jersey-client</td>
+<td>1.2</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="b"><td>com.sun.jersey</td>
+<td>jersey-core</td>
+<td>1.2</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="a"><td>com.sun.jersey</td>
+<td>jersey-server</td>
+<td>1.2</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="b"><td>com.sun.xml.bind</td>
+<td>jaxb-impl</td>
+<td>2.1.12</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="a"><td>com.yourmediashelf.fedora.client</td>
+<td>fedora-client</td>
+<td>0.0.2</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="b"><td>javax.activation</td>
+<td>activation</td>
+<td>1.1</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="a"><td>javax.ws.rs</td>
+<td>jsr311-api</td>
+<td>1.1.1</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="b"><td>javax.xml.bind</td>
+<td>jaxb-api</td>
+<td>2.1</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="a"><td>javax.xml.stream</td>
+<td>stax-api</td>
+<td>1.0-2</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="b"><td>net.sourceforge.saxon</td>
+<td>saxon</td>
+<td>9.1.0.8</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="a"><td>org.codehaus.jackson</td>
+<td>jackson-core-asl</td>
+<td>1.1.1</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="b"><td>org.codehaus.jettison</td>
+<td>jettison</td>
+<td>1.1</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="a"><td>org.jvnet</td>
+<td>mimepull</td>
+<td>1.4</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="b"><td>org.slf4j</td>
+<td>slf4j-api</td>
+<td>1.5.6</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="a"><td>stax</td>
+<td>stax-api</td>
+<td>1.0.1</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>runtime</h3>
+<p>The following is a list of runtime dependencies for this project. These dependencies are required to run the application:</p>
+<table class="bodyTable"><tr class="b"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Classifier</th>
+<th>Type</th>
+<th>Optional</th>
+</tr>
+<tr class="a"><td>log4j</td>
+<td>log4j</td>
+<td>1.2.14</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="b"><td>org.slf4j</td>
+<td>slf4j-log4j12</td>
+<td>1.5.6</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>test</h3>
+<p>The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Classifier</th>
+<th>Type</th>
+<th>Optional</th>
+</tr>
+<tr class="b"><td>com.sun.grizzly</td>
+<td>grizzly-framework</td>
+<td>1.9.18-i</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="a"><td>com.sun.grizzly</td>
+<td>grizzly-http</td>
+<td>1.9.18-i</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="b"><td>com.sun.grizzly</td>
+<td>grizzly-http-servlet</td>
+<td>1.9.18-i</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="a"><td>com.sun.grizzly</td>
+<td>grizzly-portunif</td>
+<td>1.9.18-i</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="b"><td>com.sun.grizzly</td>
+<td>grizzly-rcm</td>
+<td>1.9.18-i</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="a"><td>com.sun.grizzly</td>
+<td>grizzly-servlet-webserver</td>
+<td>1.9.18-i</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="b"><td>com.sun.grizzly</td>
+<td>grizzly-utils</td>
+<td>1.9.18-i</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="a"><td>com.sun.jersey.jersey-test-framework</td>
+<td>jersey-test-framework-core</td>
+<td>1.2</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="b"><td>junit</td>
+<td>junit</td>
+<td>4.5</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+<tr class="a"><td>org.glassfish</td>
+<td>javax.servlet</td>
+<td>3.0-b66</td>
+<td>-</td>
+<td>jar</td>
+<td> </td>
+</tr>
+</table>
+</div>
+</div>
+<div class="section"><h2>Project Dependency Graph</h2>
+<div class="section"><h3>Dependency Tree</h3>
+<p><ul><li><a href="#com.yourmediashelf.scorm:scorm2fedora-webapp:war">com.yourmediashelf.scorm:scorm2fedora-webapp:war</a><ul><li><a href="#com.yourmediashelf.scorm:scorm2fedora-core:jar">com.yourmediashelf.scorm:scorm2fedora-core:jar</a><ul><li><a href="#com.yourmediashelf.fedora.client:fedora-client:jar">com.yourmediashelf.fedora.client:fedora-client:jar</a></li>
+<li><a href="#net.sourceforge.saxon:saxon:jar">net.sourceforge.saxon:saxon:jar</a></li>
+</ul>
+</p>
+</li>
+<li><a href="#com.sun.jersey.contribs:jersey-multipart:jar">com.sun.jersey.contribs:jersey-multipart:jar</a><ul><li><a href="#org.jvnet:mimepull:jar">org.jvnet:mimepull:jar</a></li>
+</ul>
+</p>
+</li>
+<li><a href="#com.sun.jersey:jersey-json:jar">com.sun.jersey:jersey-json:jar</a><ul><li><a href="#com.sun.jersey:jersey-core:jar">com.sun.jersey:jersey-core:jar</a></li>
+<li><a href="#org.codehaus.jettison:jettison:jar">org.codehaus.jettison:jettison:jar</a><ul><li><a href="#stax:stax-api:jar">stax:stax-api:jar</a></li>
+</ul>
+</p>
+</li>
+<li><a href="#com.sun.xml.bind:jaxb-impl:jar">com.sun.xml.bind:jaxb-impl:jar</a><ul><li><a href="#javax.xml.bind:jaxb-api:jar">javax.xml.bind:jaxb-api:jar</a><ul><li><a href="#javax.xml.stream:stax-api:jar">javax.xml.stream:stax-api:jar</a></li>
+<li><a href="#javax.activation:activation:jar">javax.activation:activation:jar</a></li>
+</ul>
+</p>
+</li>
+</ul>
+</p>
+</li>
+<li><a href="#org.codehaus.jackson:jackson-core-asl:jar">org.codehaus.jackson:jackson-core-asl:jar</a></li>
+</ul>
+</p>
+</li>
+<li><a href="#commons-fileupload:commons-fileupload:jar">commons-fileupload:commons-fileupload:jar</a></li>
+<li><a href="#eu.medsea.mimeutil:mime-util:jar">eu.medsea.mimeutil:mime-util:jar</a><ul><li><a href="#org.slf4j:slf4j-log4j12:jar">org.slf4j:slf4j-log4j12:jar</a><ul><li><a href="#org.slf4j:slf4j-api:jar">org.slf4j:slf4j-api:jar</a></li>
+</ul>
+</p>
+</li>
+<li><a href="#log4j:log4j:jar">log4j:log4j:jar</a></li>
+</ul>
+</p>
+</li>
+<li><a href="#com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly:jar">com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly:jar</a><ul><li><a href="#com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar">com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar</a><ul><li><a href="#com.sun.jersey:jersey-server:jar">com.sun.jersey:jersey-server:jar</a></li>
+<li><a href="#com.sun.jersey:jersey-client:jar">com.sun.jersey:jersey-client:jar</a></li>
+<li><a href="#org.glassfish:javax.servlet:jar">org.glassfish:javax.servlet:jar</a></li>
+</ul>
+</p>
+</li>
+<li><a href="#com.sun.grizzly:grizzly-servlet-webserver:jar">com.sun.grizzly:grizzly-servlet-webserver:jar</a><ul><li><a href="#com.sun.grizzly:grizzly-http:jar">com.sun.grizzly:grizzly-http:jar</a><ul><li><a href="#com.sun.grizzly:grizzly-rcm:jar">com.sun.grizzly:grizzly-rcm:jar</a></li>
+<li><a href="#com.sun.grizzly:grizzly-portunif:jar">com.sun.grizzly:grizzly-portunif:jar</a><ul><li><a href="#com.sun.grizzly:grizzly-framework:jar">com.sun.grizzly:grizzly-framework:jar</a></li>
+</ul>
+</p>
+</li>
+</ul>
+</p>
+</li>
+<li><a href="#com.sun.grizzly:grizzly-http-servlet:jar">com.sun.grizzly:grizzly-http-servlet:jar</a><ul><li><a href="#com.sun.grizzly:grizzly-utils:jar">com.sun.grizzly:grizzly-utils:jar</a></li>
+</ul>
+</p>
+</li>
+</ul>
+</p>
+</li>
+<li><a href="#junit:junit:jar">junit:junit:jar</a></li>
+</ul>
+</p>
+</li>
+<li><a href="#javax.servlet:servlet-api:jar">javax.servlet:servlet-api:jar</a></li>
+</ul>
+</p>
+</li>
+</ul>
+</p>
+</div>
+<div class="section"><h3>Dependency Listings</h3>
+<p><a name="com.yourmediashelf.scorm:scorm2fedora-webapp:war"><b>Scorm2Fedora Webapp</b></a></p>
+<p></p>
+<p><a href="http://mediashelf.github.com/scorm2fedora/scorm2fedora-webapp" class="externalLink">http://mediashelf.github.com/scorm2fedora/scorm2fedora-webapp</a></p>
+<p><a name="com.yourmediashelf.scorm:scorm2fedora-core:jar"><b>Scorm2Fedora Core</b></a></p>
+<p>A web service that deposits SCORM packages in a Fedora repository.</p>
+<p><a href="http://mediashelf.github.com/scorm2fedora/scorm2fedora-core" class="externalLink">http://mediashelf.github.com/scorm2fedora/scorm2fedora-core</a></p>
+<p><a name="com.yourmediashelf.fedora.client:fedora-client:jar"><b>MediaShelf fedora-client</b></a></p>
+<p>Java client library for Fedora</p>
+<p><a href="http://mediashelf.github.com/fedora-client" class="externalLink">http://mediashelf.github.com/fedora-client</a></p>
+<p><a name="net.sourceforge.saxon:saxon:jar"><b>SaxonB</b></a></p>
+<p>Saxon a complete and conformant implementation of the XSLT 2.0, XQuery 1.0, and XPath 2.0 Recommendations published on 23 January 2007 by W3C</p>
+<p><a href="http://saxon.sourceforge.net/" class="externalLink">http://saxon.sourceforge.net/</a></p>
+<p><a name="com.sun.jersey.contribs:jersey-multipart:jar"><b>jersey-multipart</b></a></p>
+<p>Projects that provide additional functionality to jersey, like integration
+        with other projects/frameworks.</p>
+<p><a href="https://jersey.dev.java.net/jersey-contribs/jersey-multipart" class="externalLink">https://jersey.dev.java.net/jersey-contribs/jersey-multipart</a></p>
+<p><a name="org.jvnet:mimepull:jar"><b>MIME streaming extension</b></a></p>
+<p>Provides a streaming API to access attachments parts in a MIME message.</p>
+<p><a name="com.sun.jersey:jersey-json:jar"><b>jersey-json</b></a></p>
+<p>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+        production quality Reference Implementation for building
+        RESTful Web services.</p>
+<p><a href="https://jersey.dev.java.net/jersey-json" class="externalLink">https://jersey.dev.java.net/jersey-json</a></p>
+<p><a name="com.sun.jersey:jersey-core:jar"><b>jersey-core</b></a></p>
+<p>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+        production quality Reference Implementation for building
+        RESTful Web services.</p>
+<p><a href="https://jersey.dev.java.net/jersey-core" class="externalLink">https://jersey.dev.java.net/jersey-core</a></p>
+<p><a name="org.codehaus.jettison:jettison:jar"><b>Jettison</b></a></p>
+<p>A StAX implementation for JSON.</p>
+<p><a name="stax:stax-api:jar"><b>StAX API</b></a></p>
+<p>StAX API is the standard java XML processing API defined by JSR-173</p>
+<p><a href="http://stax.codehaus.org/" class="externalLink">http://stax.codehaus.org/</a></p>
+<p><a name="com.sun.xml.bind:jaxb-impl:jar"><b>Unnamed - com.sun.xml.bind:jaxb-impl:jar:2.1.12</b></a></p>
+<p><a name="javax.xml.bind:jaxb-api:jar"><b>Unnamed - javax.xml.bind:jaxb-api:jar:2.1</b></a></p>
+<p><a name="javax.xml.stream:stax-api:jar"><b>Unnamed - javax.xml.stream:stax-api:jar:1.0-2</b></a></p>
+<p><a name="javax.activation:activation:jar"><b>JavaBeans Activation Framework (JAF)</b></a></p>
+<p>JavaBeans Activation Framework (JAF) is a standard extension to the Java platform that lets you take advantage of standard services to: determine the type of an arbitrary piece of data; encapsulate access to it; discover the operations available on it; and instantiate the appropriate bean to perform the operation(s).</p>
+<p><a href="http://java.sun.com/products/javabeans/jaf/index.jsp" class="externalLink">http://java.sun.com/products/javabeans/jaf/index.jsp</a></p>
+<p><a name="org.codehaus.jackson:jackson-core-asl:jar"><b>Jackson</b></a></p>
+<p>Jackson is a high-performance JSON processor (parser, generator)</p>
+<p><a href="http://jackson.codehaus.org" class="externalLink">http://jackson.codehaus.org</a></p>
+<p><a name="commons-fileupload:commons-fileupload:jar"><b>Commons FileUpload</b></a></p>
+<p>The FileUpload component provides a simple yet flexible means of adding support for multipart
+    file upload functionality to servlets and web applications.</p>
+<p><a href="http://commons.apache.org/fileupload/" class="externalLink">http://commons.apache.org/fileupload/</a></p>
+<p><a name="eu.medsea.mimeutil:mime-util:jar"><b>Mime Detection Utility</b></a></p>
+<p>mime-util is a simple to use, small, light weight and fast open source java utility library that can detect
+		MIME types from files, input streams, URL's and byte arrays.
+		Due to the use of regular expressions and the java.nio packages it requires at least Java 1.4.</p>
+<p><a href="http://www.medsea.eu/mime-util/" class="externalLink">http://www.medsea.eu/mime-util/</a></p>
+<p><a name="org.slf4j:slf4j-log4j12:jar"><b>SLF4J LOG4J-12 Binding</b></a></p>
+<p>The slf4j log4j-12 binding</p>
+<p><a href="http://www.slf4j.org" class="externalLink">http://www.slf4j.org</a></p>
+<p><a name="org.slf4j:slf4j-api:jar"><b>SLF4J API Module</b></a></p>
+<p>The slf4j API</p>
+<p><a href="http://www.slf4j.org" class="externalLink">http://www.slf4j.org</a></p>
+<p><a name="log4j:log4j:jar"><b>Log4j</b></a></p>
+<p>Log4j</p>
+<p><a href="http://logging.apache.org/log4j/docs/" class="externalLink">http://logging.apache.org/log4j/docs/</a></p>
+<p><a name="com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly:jar"><b>Jersey Test Framework - Grizzly Module</b></a></p>
+<p>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+        production quality Reference Implementation for building
+        RESTful Web services.</p>
+<p><a href="https://jersey.dev.java.net/jersey-test-framework-grizzly" class="externalLink">https://jersey.dev.java.net/jersey-test-framework-grizzly</a></p>
+<p><a name="com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar"><b>Jersey Test Framework - Core</b></a></p>
+<p>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+        production quality Reference Implementation for building
+        RESTful Web services.</p>
+<p><a href="https://jersey.dev.java.net/jersey-test-framework-core" class="externalLink">https://jersey.dev.java.net/jersey-test-framework-core</a></p>
+<p><a name="com.sun.jersey:jersey-server:jar"><b>jersey-server</b></a></p>
+<p>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+        production quality Reference Implementation for building
+        RESTful Web services.</p>
+<p><a href="https://jersey.dev.java.net/jersey-server" class="externalLink">https://jersey.dev.java.net/jersey-server</a></p>
+<p><a name="com.sun.jersey:jersey-client:jar"><b>jersey-client</b></a></p>
+<p>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+        production quality Reference Implementation for building
+        RESTful Web services.</p>
+<p><a href="https://jersey.dev.java.net/jersey-client" class="externalLink">https://jersey.dev.java.net/jersey-client</a></p>
+<p><a name="org.glassfish:javax.servlet:jar"><b>javax.servlet API v.3.0</b></a></p>
+<p><a href="http://jcp.org/en/jsr/detail?id=315" class="externalLink">http://jcp.org/en/jsr/detail?id=315</a></p>
+<p><a name="com.sun.grizzly:grizzly-servlet-webserver:jar"><b>grizzly-servlet-webserver</b></a></p>
+<p><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
+<p><a name="com.sun.grizzly:grizzly-http:jar"><b>grizzly-http</b></a></p>
+<p><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
+<p><a name="com.sun.grizzly:grizzly-rcm:jar"><b>grizzly-rcm</b></a></p>
+<p><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
+<p><a name="com.sun.grizzly:grizzly-portunif:jar"><b>grizzly-portunif</b></a></p>
+<p><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
+<p><a name="com.sun.grizzly:grizzly-framework:jar"><b>grizzly-framework</b></a></p>
+<p><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
+<p><a name="com.sun.grizzly:grizzly-http-servlet:jar"><b>grizzly-http-servlet</b></a></p>
+<p><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
+<p><a name="com.sun.grizzly:grizzly-utils:jar"><b>grizzly-utils</b></a></p>
+<p><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
+<p><a name="junit:junit:jar"><b>JUnit</b></a></p>
+<p>JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.</p>
+<p><a href="http://junit.org" class="externalLink">http://junit.org</a></p>
+<p><a name="javax.servlet:servlet-api:jar"><b>Unnamed - javax.servlet:servlet-api:jar:2.5</b></a></p>
+</div>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2010
+    
+          MediaShelf
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>
