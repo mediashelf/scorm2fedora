@@ -7,7 +7,7 @@
 Usage
 
     See the scorm2fedora GitHub 
-{{http://github.com/mediashelf/scorm2fedora/}project page} 
+{{{http://github.com/mediashelf/scorm2fedora/}project page}} 
 to download the scorm2fedora webapp.
 
     At a minimum you will need to configure scorm2fedora so that it can 
@@ -47,10 +47,11 @@ the scorm2fedora.properties file located in the scorm2fedora-core jar file.
 following Java system properties to be available: 
 
     * javax.net.ssl.trustStore
+
     * javax.net.ssl.trustStorePassword
     
-If the scorm2fedora webapp is deployed to the same container as Fedora, these 
-properties should already be set and available.
+    Note: if the scorm2fedora webapp is deployed to the same container as 
+Fedora, these properties should already be set and available.
 
 
 * Including scorm2fedora in your Maven2 project
