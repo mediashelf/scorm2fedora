@@ -135,7 +135,6 @@
   </distributionManagement>
 
   <build>
-    <finalName>scorm2fedora</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>

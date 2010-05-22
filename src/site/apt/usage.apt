@@ -1,0 +1,80 @@
+    ---
+    Usage
+    ---
+    Edwin Shin
+    ---
+
+Usage
+
+    See the scorm2fedora GitHub 
+{{http://github.com/mediashelf/scorm2fedora/}project page} 
+to download the scorm2fedora webapp.
+
+    At a minimum you will need to configure scorm2fedora so that it can 
+authenticate itself against your Fedora repository.
+
+    Once scorm2fedora has been configured and deployed to your servlet 
+container, SCORM packages can be submitted using HTTP POST requests to the 
+scorm2fedora service endpoint (e.g. http://example.org:8080/scorm2fedora). 
+That's it!
+
+* Configuration
+
+    Scorm2Fedora supports configuration by web.xml init-params and Java 
+properties files. The following configuration parameters are supported:
+
+    * username
+          * The username Scorm2Fedora should use to connect to the Fedora 
+Repository, e.g. fedoraAdmin
+    * password
+          * The password Scorm2Fedora should use to connect to the Fedora 
+Repository, e.g. fedoraAdmin
+    * baseUrl
+          * The baseUrl of the Fedora Repository, e.g. http://example.org:8080/fedora
+    * namespace
+          * pid namespace for newly created Fedora objects, e.g. scorm
+    * scorm.dsid
+          * The datastream id for the original SCORM package
+    * cmodel
+          * The URI of the content model new objects subscribe to, e.g. info:fedora/foo:bar
+
+    If the web.xml init-params are not present, configuration will fall back to 
+the scorm2fedora.properties file located in the scorm2fedora-core jar file.
+
+* SSL
+
+    If the target Fedora repository requires SSL, scorm2fedora expects the 
+following Java system properties to be available: 
+
+    * javax.net.ssl.trustStore
+    * javax.net.ssl.trustStorePassword
+    
+If the scorm2fedora webapp is deployed to the same container as Fedora, these 
+properties should already be set and available.
+
+
+* Including scorm2fedora in your Maven2 project
+
+    Add the following to your pom.xml (you should only need to explicitly 
+add one of dependencies below, depending on which artifact you want, the 
+jar (core) or the war (webapp)):
+    
++--
+<repository>
+    <id>duraspace-thirdparty</id>
+    <name>Duraspace Thirdparty Maven Repository</name>
+    <url>https://fedora-commons.org/m2/content/repositories/thirdparty</url>
+</repository>
+
+<dependency>
+    <groupId>com.yourmediashelf.fedora.client</groupId>
+    <artifactId>scorm2fedora-core</artifactId>
+    <version>0.0.1</version>
+</dependency>
+
+<dependency>
+    <groupId>com.yourmediashelf.fedora.client</groupId>
+    <artifactId>scorm2fedora-webapp</artifactId>
+    <version>0.0.1</version>
+</dependency>
++--
