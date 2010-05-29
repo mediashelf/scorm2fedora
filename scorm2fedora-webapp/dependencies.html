@@ -42,8 +42,8 @@
   
     
             <div class="xleft">
-        Last Published: 2010-05-22
-                  &nbsp;| Version: 0.0.2-SNAPSHOT
+        Last Published: 2010-05-29
+                  &nbsp;| Version: 0.0.2
                       </div>
             <div class="xright">            <a href="http://www.yourmediashelf.com/" class="externalLink">MediaShelf</a>
             |
@@ -163,493 +163,2197 @@
     </div>
     <div id="bodyColumn">
       <div id="contentBox">
-        <div class="section"><h2>Project Dependencies</h2>
-<div class="section"><h3>compile</h3>
+        <a name="Project_Dependencies"></a><div class="section"><h2>Project Dependencies</h2>
+<a name="compile"></a><div class="section"><h3>compile</h3>
 <p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p>
 <table class="bodyTable"><tr class="a"><th>GroupId</th>
 <th>ArtifactId</th>
 <th>Version</th>
-<th>Classifier</th>
 <th>Type</th>
-<th>Optional</th>
 </tr>
 <tr class="b"><td>com.sun.jersey</td>
-<td>jersey-json</td>
+<td><a href="https://jersey.dev.java.net/jersey-client" class="externalLink">jersey-client</a></td>
 <td>1.2</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
+</tr>
+<tr class="a"><td>com.sun.jersey</td>
+<td><a href="https://jersey.dev.java.net/jersey-json" class="externalLink">jersey-json</a></td>
+<td>1.2</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>com.sun.jersey</td>
+<td><a href="https://jersey.dev.java.net/jersey-server" class="externalLink">jersey-server</a></td>
+<td>1.2</td>
+<td>jar</td>
 </tr>
 <tr class="a"><td>com.sun.jersey.contribs</td>
-<td>jersey-multipart</td>
+<td><a href="https://jersey.dev.java.net/jersey-contribs/jersey-multipart" class="externalLink">jersey-multipart</a></td>
 <td>1.2</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="b"><td>com.yourmediashelf.scorm</td>
-<td>scorm2fedora-core</td>
-<td>0.0.2-SNAPSHOT</td>
-<td>-</td>
+<td><a href="http://mediashelf.github.com/scorm2fedora/scorm2fedora-core" class="externalLink">scorm2fedora-core</a></td>
+<td>0.0.2</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="a"><td>commons-fileupload</td>
-<td>commons-fileupload</td>
+<td><a href="http://commons.apache.org/fileupload/" class="externalLink">commons-fileupload</a></td>
 <td>1.2.1</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="b"><td>eu.medsea.mimeutil</td>
-<td>mime-util</td>
+<td><a href="http://www.medsea.eu/mime-util/" class="externalLink">mime-util</a></td>
 <td>2.1.3</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 </table>
 </div>
-<div class="section"><h3>test</h3>
+<a name="test"></a><div class="section"><h3>test</h3>
 <p>The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application:</p>
 <table class="bodyTable"><tr class="a"><th>GroupId</th>
 <th>ArtifactId</th>
 <th>Version</th>
-<th>Classifier</th>
 <th>Type</th>
-<th>Optional</th>
 </tr>
 <tr class="b"><td>com.sun.jersey.jersey-test-framework</td>
-<td>jersey-test-framework-grizzly</td>
+<td><a href="https://jersey.dev.java.net/jersey-test-framework-grizzly" class="externalLink">jersey-test-framework-grizzly</a></td>
 <td>1.2</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
+</tr>
+<tr class="a"><td>xmlunit</td>
+<td><a href="http://xmlunit.sourceforge.net/" class="externalLink">xmlunit</a></td>
+<td>1.3</td>
+<td>jar</td>
 </tr>
 </table>
 </div>
-<div class="section"><h3>provided</h3>
+<a name="provided"></a><div class="section"><h3>provided</h3>
 <p>The following is a list of provided dependencies for this project. These dependencies are required to compile the application, but should be provided by default when using the library:</p>
-<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<table class="bodyTable"><tr class="b"><th>GroupId</th>
 <th>ArtifactId</th>
 <th>Version</th>
-<th>Classifier</th>
 <th>Type</th>
-<th>Optional</th>
 </tr>
-<tr class="b"><td>javax.servlet</td>
+<tr class="a"><td>javax.servlet</td>
 <td>servlet-api</td>
 <td>2.5</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 </table>
 </div>
 </div>
-<div class="section"><h2>Project Transitive Dependencies</h2>
+<a name="Project_Transitive_Dependencies"></a><div class="section"><h2>Project Transitive Dependencies</h2>
 <p>The following is a list of transitive dependencies for this project. Transitive dependencies are the dependencies of the project dependencies.</p>
-<div class="section"><h3>compile</h3>
+<a name="compile"></a><div class="section"><h3>compile</h3>
 <p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p>
-<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<table class="bodyTable"><tr class="b"><th>GroupId</th>
 <th>ArtifactId</th>
 <th>Version</th>
-<th>Classifier</th>
 <th>Type</th>
-<th>Optional</th>
 </tr>
-<tr class="b"><td>asm</td>
-<td>asm</td>
+<tr class="a"><td>asm</td>
+<td><a href="http://asm.objectweb.org/asm" class="externalLink">asm</a></td>
 <td>3.1</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
+</tr>
+<tr class="b"><td>com.hp.hpl.jena</td>
+<td><a href="http://jena.sf.net/iri" class="externalLink">iri</a></td>
+<td>0.7</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>com.hp.hpl.jena</td>
+<td><a href="http://www.openjena.org/" class="externalLink">jena</a></td>
+<td>2.6.2</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>com.ibm.icu</td>
+<td><a href="http://www-306.ibm.com/software/globalization/icu/" class="externalLink">icu4j</a></td>
+<td>3.4.4</td>
+<td>jar</td>
 </tr>
 <tr class="a"><td>com.sun.jersey</td>
-<td>jersey-client</td>
+<td><a href="https://jersey.dev.java.net/jersey-core" class="externalLink">jersey-core</a></td>
 <td>1.2</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
-</tr>
-<tr class="b"><td>com.sun.jersey</td>
-<td>jersey-core</td>
-<td>1.2</td>
-<td>-</td>
-<td>jar</td>
-<td> </td>
-</tr>
-<tr class="a"><td>com.sun.jersey</td>
-<td>jersey-server</td>
-<td>1.2</td>
-<td>-</td>
-<td>jar</td>
-<td> </td>
 </tr>
 <tr class="b"><td>com.sun.xml.bind</td>
 <td>jaxb-impl</td>
 <td>2.1.12</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="a"><td>com.yourmediashelf.fedora.client</td>
-<td>fedora-client</td>
-<td>0.0.2</td>
-<td>-</td>
+<td><a href="http://mediashelf.github.com/fedora-client" class="externalLink">fedora-client</a></td>
+<td>0.0.7</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="b"><td>javax.activation</td>
-<td>activation</td>
+<td><a href="http://java.sun.com/products/javabeans/jaf/index.jsp" class="externalLink">activation</a></td>
 <td>1.1</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="a"><td>javax.ws.rs</td>
-<td>jsr311-api</td>
+<td><a href="https://jsr311.dev.java.net" class="externalLink">jsr311-api</a></td>
 <td>1.1.1</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="b"><td>javax.xml.bind</td>
 <td>jaxb-api</td>
 <td>2.1</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="a"><td>javax.xml.stream</td>
 <td>stax-api</td>
 <td>1.0-2</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
-<tr class="b"><td>net.sourceforge.saxon</td>
-<td>saxon</td>
+<tr class="b"><td>joda-time</td>
+<td><a href="http://joda-time.sourceforge.net" class="externalLink">joda-time</a></td>
+<td>1.6</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>net.sourceforge.saxon</td>
+<td><a href="http://saxon.sourceforge.net/" class="externalLink">saxon</a></td>
 <td>9.1.0.8</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
-<tr class="a"><td>org.codehaus.jackson</td>
-<td>jackson-core-asl</td>
+<tr class="b"><td>org.codehaus.jackson</td>
+<td><a href="http://jackson.codehaus.org" class="externalLink">jackson-core-asl</a></td>
 <td>1.1.1</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
-<tr class="b"><td>org.codehaus.jettison</td>
+<tr class="a"><td>org.codehaus.jettison</td>
 <td>jettison</td>
 <td>1.1</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
-<tr class="a"><td>org.jvnet</td>
+<tr class="b"><td>org.jvnet</td>
 <td>mimepull</td>
 <td>1.4</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
-<tr class="b"><td>org.slf4j</td>
-<td>slf4j-api</td>
+<tr class="a"><td>org.slf4j</td>
+<td><a href="http://www.slf4j.org" class="externalLink">slf4j-api</a></td>
 <td>1.5.6</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
-<tr class="a"><td>stax</td>
-<td>stax-api</td>
+<tr class="b"><td>stax</td>
+<td><a href="http://stax.codehaus.org/" class="externalLink">stax-api</a></td>
 <td>1.0.1</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
+</tr>
+<tr class="a"><td>xerces</td>
+<td>xercesImpl</td>
+<td>2.7.1</td>
+<td>jar</td>
 </tr>
 </table>
 </div>
-<div class="section"><h3>runtime</h3>
+<a name="runtime"></a><div class="section"><h3>runtime</h3>
 <p>The following is a list of runtime dependencies for this project. These dependencies are required to run the application:</p>
 <table class="bodyTable"><tr class="b"><th>GroupId</th>
 <th>ArtifactId</th>
 <th>Version</th>
-<th>Classifier</th>
 <th>Type</th>
-<th>Optional</th>
 </tr>
 <tr class="a"><td>log4j</td>
-<td>log4j</td>
+<td><a href="http://logging.apache.org/log4j/docs/" class="externalLink">log4j</a></td>
 <td>1.2.14</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="b"><td>org.slf4j</td>
-<td>slf4j-log4j12</td>
+<td><a href="http://www.slf4j.org" class="externalLink">slf4j-log4j12</a></td>
 <td>1.5.6</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 </table>
 </div>
-<div class="section"><h3>test</h3>
+<a name="test"></a><div class="section"><h3>test</h3>
 <p>The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application:</p>
 <table class="bodyTable"><tr class="a"><th>GroupId</th>
 <th>ArtifactId</th>
 <th>Version</th>
-<th>Classifier</th>
 <th>Type</th>
-<th>Optional</th>
 </tr>
 <tr class="b"><td>com.sun.grizzly</td>
-<td>grizzly-framework</td>
+<td><a href="https://grizzly.dev.java.net" class="externalLink">grizzly-framework</a></td>
 <td>1.9.18-i</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="a"><td>com.sun.grizzly</td>
-<td>grizzly-http</td>
+<td><a href="https://grizzly.dev.java.net" class="externalLink">grizzly-http</a></td>
 <td>1.9.18-i</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="b"><td>com.sun.grizzly</td>
-<td>grizzly-http-servlet</td>
+<td><a href="https://grizzly.dev.java.net" class="externalLink">grizzly-http-servlet</a></td>
 <td>1.9.18-i</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="a"><td>com.sun.grizzly</td>
-<td>grizzly-portunif</td>
+<td><a href="https://grizzly.dev.java.net" class="externalLink">grizzly-portunif</a></td>
 <td>1.9.18-i</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="b"><td>com.sun.grizzly</td>
-<td>grizzly-rcm</td>
+<td><a href="https://grizzly.dev.java.net" class="externalLink">grizzly-rcm</a></td>
 <td>1.9.18-i</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="a"><td>com.sun.grizzly</td>
-<td>grizzly-servlet-webserver</td>
+<td><a href="https://grizzly.dev.java.net" class="externalLink">grizzly-servlet-webserver</a></td>
 <td>1.9.18-i</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="b"><td>com.sun.grizzly</td>
-<td>grizzly-utils</td>
+<td><a href="https://grizzly.dev.java.net" class="externalLink">grizzly-utils</a></td>
 <td>1.9.18-i</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="a"><td>com.sun.jersey.jersey-test-framework</td>
-<td>jersey-test-framework-core</td>
+<td><a href="https://jersey.dev.java.net/jersey-test-framework-core" class="externalLink">jersey-test-framework-core</a></td>
 <td>1.2</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="b"><td>junit</td>
-<td>junit</td>
-<td>4.5</td>
-<td>-</td>
+<td><a href="http://junit.org" class="externalLink">junit</a></td>
+<td>4.8.1</td>
 <td>jar</td>
-<td> </td>
 </tr>
 <tr class="a"><td>org.glassfish</td>
-<td>javax.servlet</td>
+<td><a href="http://jcp.org/en/jsr/detail?id=315" class="externalLink">javax.servlet</a></td>
 <td>3.0-b66</td>
-<td>-</td>
 <td>jar</td>
-<td> </td>
 </tr>
 </table>
 </div>
 </div>
-<div class="section"><h2>Project Dependency Graph</h2>
-<div class="section"><h3>Dependency Tree</h3>
-<p><ul><li><a href="#com.yourmediashelf.scorm:scorm2fedora-webapp:war">com.yourmediashelf.scorm:scorm2fedora-webapp:war</a><ul><li><a href="#com.yourmediashelf.scorm:scorm2fedora-core:jar">com.yourmediashelf.scorm:scorm2fedora-core:jar</a><ul><li><a href="#com.yourmediashelf.fedora.client:fedora-client:jar">com.yourmediashelf.fedora.client:fedora-client:jar</a></li>
-<li><a href="#net.sourceforge.saxon:saxon:jar">net.sourceforge.saxon:saxon:jar</a></li>
-</ul>
-</p>
-</li>
-<li><a href="#com.sun.jersey.contribs:jersey-multipart:jar">com.sun.jersey.contribs:jersey-multipart:jar</a><ul><li><a href="#org.jvnet:mimepull:jar">org.jvnet:mimepull:jar</a></li>
-</ul>
-</p>
-</li>
-<li><a href="#com.sun.jersey:jersey-json:jar">com.sun.jersey:jersey-json:jar</a><ul><li><a href="#com.sun.jersey:jersey-core:jar">com.sun.jersey:jersey-core:jar</a></li>
-<li><a href="#org.codehaus.jettison:jettison:jar">org.codehaus.jettison:jettison:jar</a><ul><li><a href="#stax:stax-api:jar">stax:stax-api:jar</a></li>
-</ul>
-</p>
-</li>
-<li><a href="#com.sun.xml.bind:jaxb-impl:jar">com.sun.xml.bind:jaxb-impl:jar</a><ul><li><a href="#javax.xml.bind:jaxb-api:jar">javax.xml.bind:jaxb-api:jar</a><ul><li><a href="#javax.xml.stream:stax-api:jar">javax.xml.stream:stax-api:jar</a></li>
-<li><a href="#javax.activation:activation:jar">javax.activation:activation:jar</a></li>
-</ul>
-</p>
-</li>
-</ul>
-</p>
-</li>
-<li><a href="#org.codehaus.jackson:jackson-core-asl:jar">org.codehaus.jackson:jackson-core-asl:jar</a></li>
-</ul>
-</p>
-</li>
-<li><a href="#commons-fileupload:commons-fileupload:jar">commons-fileupload:commons-fileupload:jar</a></li>
-<li><a href="#eu.medsea.mimeutil:mime-util:jar">eu.medsea.mimeutil:mime-util:jar</a><ul><li><a href="#org.slf4j:slf4j-log4j12:jar">org.slf4j:slf4j-log4j12:jar</a><ul><li><a href="#org.slf4j:slf4j-api:jar">org.slf4j:slf4j-api:jar</a></li>
-</ul>
-</p>
-</li>
-<li><a href="#log4j:log4j:jar">log4j:log4j:jar</a></li>
-</ul>
-</p>
-</li>
-<li><a href="#com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly:jar">com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly:jar</a><ul><li><a href="#com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar">com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar</a><ul><li><a href="#com.sun.jersey:jersey-server:jar">com.sun.jersey:jersey-server:jar</a></li>
-<li><a href="#com.sun.jersey:jersey-client:jar">com.sun.jersey:jersey-client:jar</a></li>
-<li><a href="#org.glassfish:javax.servlet:jar">org.glassfish:javax.servlet:jar</a></li>
-</ul>
-</p>
-</li>
-<li><a href="#com.sun.grizzly:grizzly-servlet-webserver:jar">com.sun.grizzly:grizzly-servlet-webserver:jar</a><ul><li><a href="#com.sun.grizzly:grizzly-http:jar">com.sun.grizzly:grizzly-http:jar</a><ul><li><a href="#com.sun.grizzly:grizzly-rcm:jar">com.sun.grizzly:grizzly-rcm:jar</a></li>
-<li><a href="#com.sun.grizzly:grizzly-portunif:jar">com.sun.grizzly:grizzly-portunif:jar</a><ul><li><a href="#com.sun.grizzly:grizzly-framework:jar">com.sun.grizzly:grizzly-framework:jar</a></li>
-</ul>
-</p>
-</li>
-</ul>
-</p>
-</li>
-<li><a href="#com.sun.grizzly:grizzly-http-servlet:jar">com.sun.grizzly:grizzly-http-servlet:jar</a><ul><li><a href="#com.sun.grizzly:grizzly-utils:jar">com.sun.grizzly:grizzly-utils:jar</a></li>
-</ul>
-</p>
-</li>
-</ul>
-</p>
-</li>
-<li><a href="#junit:junit:jar">junit:junit:jar</a></li>
-</ul>
-</p>
-</li>
-<li><a href="#javax.servlet:servlet-api:jar">javax.servlet:servlet-api:jar</a></li>
-</ul>
-</p>
-</li>
-</ul>
-</p>
-</div>
-<div class="section"><h3>Dependency Listings</h3>
-<p><a name="com.yourmediashelf.scorm:scorm2fedora-webapp:war"><b>Scorm2Fedora Webapp</b></a></p>
-<p></p>
-<p><a href="http://mediashelf.github.com/scorm2fedora/scorm2fedora-webapp" class="externalLink">http://mediashelf.github.com/scorm2fedora/scorm2fedora-webapp</a></p>
-<p><a name="com.yourmediashelf.scorm:scorm2fedora-core:jar"><b>Scorm2Fedora Core</b></a></p>
-<p>A web service that deposits SCORM packages in a Fedora repository.</p>
-<p><a href="http://mediashelf.github.com/scorm2fedora/scorm2fedora-core" class="externalLink">http://mediashelf.github.com/scorm2fedora/scorm2fedora-core</a></p>
-<p><a name="com.yourmediashelf.fedora.client:fedora-client:jar"><b>MediaShelf fedora-client</b></a></p>
-<p>Java client library for Fedora</p>
-<p><a href="http://mediashelf.github.com/fedora-client" class="externalLink">http://mediashelf.github.com/fedora-client</a></p>
-<p><a name="net.sourceforge.saxon:saxon:jar"><b>SaxonB</b></a></p>
-<p>Saxon a complete and conformant implementation of the XSLT 2.0, XQuery 1.0, and XPath 2.0 Recommendations published on 23 January 2007 by W3C</p>
-<p><a href="http://saxon.sourceforge.net/" class="externalLink">http://saxon.sourceforge.net/</a></p>
-<p><a name="com.sun.jersey.contribs:jersey-multipart:jar"><b>jersey-multipart</b></a></p>
-<p>Projects that provide additional functionality to jersey, like integration
-        with other projects/frameworks.</p>
-<p><a href="https://jersey.dev.java.net/jersey-contribs/jersey-multipart" class="externalLink">https://jersey.dev.java.net/jersey-contribs/jersey-multipart</a></p>
-<p><a name="org.jvnet:mimepull:jar"><b>MIME streaming extension</b></a></p>
-<p>Provides a streaming API to access attachments parts in a MIME message.</p>
-<p><a name="com.sun.jersey:jersey-json:jar"><b>jersey-json</b></a></p>
-<p>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+<a name="Project_Dependency_Graph"></a><div class="section"><h2>Project Dependency Graph</h2>
+<script language="javascript" type="text/javascript">
+      function toggleDependencyDetail( divId, imgId )
+      {
+        var div = document.getElementById( divId );
+        var img = document.getElementById( imgId );
+        if( div.style.display == '' )
+        {
+          div.style.display = 'none';
+          img.src='./images/icon_info_sml.gif';
+        }
+        else
+        {
+          div.style.display = '';
+          img.src='./images/close.gif';
+        }
+      }
+</script>
+<a name="Dependency_Tree"></a><div class="section"><h3>Dependency Tree</h3>
+<ul><li>com.yourmediashelf.scorm:scorm2fedora-webapp:war:0.0.2 <img id="_993977429" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_514468478', '_993977429' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_514468478" style="display:none"><table class="bodyTable"><tr class="b"><th>Scorm2Fedora Webapp</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="http://mediashelf.github.com/scorm2fedora/scorm2fedora-webapp" class="externalLink">http://mediashelf.github.com/scorm2fedora/scorm2fedora-webapp</a></p>
+<p><b>Project License: </b><a href="http://www.gnu.org/licenses/gpl.html" class="externalLink">GNU General Public License, Version 3.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.yourmediashelf.scorm:scorm2fedora-core:jar:0.0.2 (compile) <img id="_83610014" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2083179763', '_83610014' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2083179763" style="display:none"><table class="bodyTable"><tr class="b"><th>Scorm2Fedora Core</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>A web service that deposits SCORM packages in a Fedora repository.</p>
+<p><b>URL: </b><a href="http://mediashelf.github.com/scorm2fedora/scorm2fedora-core" class="externalLink">http://mediashelf.github.com/scorm2fedora/scorm2fedora-core</a></p>
+<p><b>Project License: </b><a href="http://www.gnu.org/licenses/gpl.html" class="externalLink">GNU General Public License, Version 3.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.yourmediashelf.fedora.client:fedora-client:jar:0.0.7 (compile) <img id="_1012092552" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2048693510', '_1012092552' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2048693510" style="display:none"><table class="bodyTable"><tr class="b"><th>MediaShelf fedora-client</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Java client library for Fedora</p>
+<p><b>URL: </b><a href="http://mediashelf.github.com/fedora-client" class="externalLink">http://mediashelf.github.com/fedora-client</a></p>
+<p><b>Project License: </b><a href="http://www.gnu.org/licenses/lgpl-3.0-standalone.html" class="externalLink">GNU Lesser General Public License, Version 3.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.sun.jersey:jersey-client:jar:1.2 (compile) <img id="_2034672094" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_344101492', '_2034672094' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_344101492" style="display:none"><table class="bodyTable"><tr class="b"><th>jersey-client</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
         production quality Reference Implementation for building
         RESTful Web services.</p>
-<p><a href="https://jersey.dev.java.net/jersey-json" class="externalLink">https://jersey.dev.java.net/jersey-json</a></p>
-<p><a name="com.sun.jersey:jersey-core:jar"><b>jersey-core</b></a></p>
-<p>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
-        production quality Reference Implementation for building
-        RESTful Web services.</p>
-<p><a href="https://jersey.dev.java.net/jersey-core" class="externalLink">https://jersey.dev.java.net/jersey-core</a></p>
-<p><a name="org.codehaus.jettison:jettison:jar"><b>Jettison</b></a></p>
-<p>A StAX implementation for JSON.</p>
-<p><a name="stax:stax-api:jar"><b>StAX API</b></a></p>
-<p>StAX API is the standard java XML processing API defined by JSR-173</p>
-<p><a href="http://stax.codehaus.org/" class="externalLink">http://stax.codehaus.org/</a></p>
-<p><a name="com.sun.xml.bind:jaxb-impl:jar"><b>Unnamed - com.sun.xml.bind:jaxb-impl:jar:2.1.12</b></a></p>
-<p><a name="javax.xml.bind:jaxb-api:jar"><b>Unnamed - javax.xml.bind:jaxb-api:jar:2.1</b></a></p>
-<p><a name="javax.xml.stream:stax-api:jar"><b>Unnamed - javax.xml.stream:stax-api:jar:1.0-2</b></a></p>
-<p><a name="javax.activation:activation:jar"><b>JavaBeans Activation Framework (JAF)</b></a></p>
-<p>JavaBeans Activation Framework (JAF) is a standard extension to the Java platform that lets you take advantage of standard services to: determine the type of an arbitrary piece of data; encapsulate access to it; discover the operations available on it; and instantiate the appropriate bean to perform the operation(s).</p>
-<p><a href="http://java.sun.com/products/javabeans/jaf/index.jsp" class="externalLink">http://java.sun.com/products/javabeans/jaf/index.jsp</a></p>
-<p><a name="org.codehaus.jackson:jackson-core-asl:jar"><b>Jackson</b></a></p>
-<p>Jackson is a high-performance JSON processor (parser, generator)</p>
-<p><a href="http://jackson.codehaus.org" class="externalLink">http://jackson.codehaus.org</a></p>
-<p><a name="commons-fileupload:commons-fileupload:jar"><b>Commons FileUpload</b></a></p>
-<p>The FileUpload component provides a simple yet flexible means of adding support for multipart
-    file upload functionality to servlets and web applications.</p>
-<p><a href="http://commons.apache.org/fileupload/" class="externalLink">http://commons.apache.org/fileupload/</a></p>
-<p><a name="eu.medsea.mimeutil:mime-util:jar"><b>Mime Detection Utility</b></a></p>
-<p>mime-util is a simple to use, small, light weight and fast open source java utility library that can detect
+<p><b>URL: </b><a href="https://jersey.dev.java.net/jersey-client" class="externalLink">https://jersey.dev.java.net/jersey-client</a></p>
+<p><b>Project License: </b><a href="https://jersey.dev.java.net/CDDL+GPL.html" class="externalLink">CDDL+GPL License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>eu.medsea.mimeutil:mime-util:jar:2.1.3 (compile) <img id="_1843991046" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_177719466', '_1843991046' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_177719466" style="display:none"><table class="bodyTable"><tr class="b"><th>Mime Detection Utility</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>mime-util is a simple to use, small, light weight and fast open source java utility library that can detect
 		MIME types from files, input streams, URL's and byte arrays.
 		Due to the use of regular expressions and the java.nio packages it requires at least Java 1.4.</p>
-<p><a href="http://www.medsea.eu/mime-util/" class="externalLink">http://www.medsea.eu/mime-util/</a></p>
-<p><a name="org.slf4j:slf4j-log4j12:jar"><b>SLF4J LOG4J-12 Binding</b></a></p>
-<p>The slf4j log4j-12 binding</p>
-<p><a href="http://www.slf4j.org" class="externalLink">http://www.slf4j.org</a></p>
-<p><a name="org.slf4j:slf4j-api:jar"><b>SLF4J API Module</b></a></p>
-<p>The slf4j API</p>
-<p><a href="http://www.slf4j.org" class="externalLink">http://www.slf4j.org</a></p>
-<p><a name="log4j:log4j:jar"><b>Log4j</b></a></p>
-<p>Log4j</p>
-<p><a href="http://logging.apache.org/log4j/docs/" class="externalLink">http://logging.apache.org/log4j/docs/</a></p>
-<p><a name="com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly:jar"><b>Jersey Test Framework - Grizzly Module</b></a></p>
-<p>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+<p><b>URL: </b><a href="http://www.medsea.eu/mime-util/" class="externalLink">http://www.medsea.eu/mime-util/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>joda-time:joda-time:jar:1.6 (compile) <img id="_390163190" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1636361026', '_390163190' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1636361026" style="display:none"><table class="bodyTable"><tr class="b"><th>Joda time</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Date and time library to replace JDK date handling.</p>
+<p><b>URL: </b><a href="http://joda-time.sourceforge.net" class="externalLink">http://joda-time.sourceforge.net</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/" class="externalLink">Apache 2</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>com.hp.hpl.jena:jena:jar:2.6.2 (compile) <img id="_1714474361" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_524282474', '_1714474361' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_524282474" style="display:none"><table class="bodyTable"><tr class="b"><th>Jena</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Jena is a Java framework for building Semantic Web applications. It provides a programmatic environment for RDF, RDFS and OWL, SPARQL and includes a rule-based inference engine.</p>
+<p><b>URL: </b><a href="http://www.openjena.org/" class="externalLink">http://www.openjena.org/</a></p>
+<p><b>Project License: </b><a href="http://jena.sourceforge.net/license.html" class="externalLink">BSD</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.hp.hpl.jena:iri:jar:0.7 (compile) <img id="_592570329" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1959950199', '_592570329' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1959950199" style="display:none"><table class="bodyTable"><tr class="b"><th>Jena IRI</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="http://jena.sf.net/iri" class="externalLink">http://jena.sf.net/iri</a></p>
+<p><b>Project License: </b><a href="http://jena.sourceforge.net/iri/license.html" class="externalLink">BSD-style license</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.ibm.icu:icu4j:jar:3.4.4 (compile) <img id="_1663721950" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_485708163', '_1663721950' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_485708163" style="display:none"><table class="bodyTable"><tr class="b"><th>ICU4J</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>The International Component for Unicode (ICU) is a mature,
+        portable set of C/C++ and Java libraries for Unicode support, software
+        internationalization (I18N) and globalization (G11N), giving
+        applications the same results on all platforms.</p>
+<p><b>URL: </b><a href="http://www-306.ibm.com/software/globalization/icu/" class="externalLink">http://www-306.ibm.com/software/globalization/icu/</a></p>
+<p><b>Project License: </b><a href="http://www-306.ibm.com/software/globalization/icu/license.jsp" class="externalLink">ICU License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>org.slf4j:slf4j-api:jar:1.5.6 (compile) <img id="_1127491723" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_568708117', '_1127491723' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_568708117" style="display:none"><table class="bodyTable"><tr class="b"><th>SLF4J API Module</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>The slf4j API</p>
+<p><b>URL: </b><a href="http://www.slf4j.org" class="externalLink">http://www.slf4j.org</a></p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>com.ibm.icu:icu4j:jar:3.4.4 (compile) <img id="_1136840955" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1281516051', '_1136840955' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1281516051" style="display:none"><table class="bodyTable"><tr class="b"><th>ICU4J</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>The International Component for Unicode (ICU) is a mature,
+        portable set of C/C++ and Java libraries for Unicode support, software
+        internationalization (I18N) and globalization (G11N), giving
+        applications the same results on all platforms.</p>
+<p><b>URL: </b><a href="http://www-306.ibm.com/software/globalization/icu/" class="externalLink">http://www-306.ibm.com/software/globalization/icu/</a></p>
+<p><b>Project License: </b><a href="http://www-306.ibm.com/software/globalization/icu/license.jsp" class="externalLink">ICU License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>xerces:xercesImpl:jar:2.7.1 (compile) <img id="_727018645" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_459693897', '_727018645' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_459693897" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - xerces:xercesImpl:jar:2.7.1</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.slf4j:slf4j-log4j12:jar:1.5.6 (runtime) <img id="_749057020" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1638510435', '_749057020' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1638510435" style="display:none"><table class="bodyTable"><tr class="b"><th>SLF4J LOG4J-12 Binding</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>The slf4j log4j-12 binding</p>
+<p><b>URL: </b><a href="http://www.slf4j.org" class="externalLink">http://www.slf4j.org</a></p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>net.sourceforge.saxon:saxon:jar:9.1.0.8 (compile) <img id="_402179757" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1787803513', '_402179757' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1787803513" style="display:none"><table class="bodyTable"><tr class="b"><th>SaxonB</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Saxon a complete and conformant implementation of the XSLT 2.0, XQuery 1.0, and XPath 2.0 Recommendations published on 23 January 2007 by W3C</p>
+<p><b>URL: </b><a href="http://saxon.sourceforge.net/" class="externalLink">http://saxon.sourceforge.net/</a></p>
+<p><b>Project License: </b><a href="http://www.mozilla.org/MPL/MPL-1.0.txt" class="externalLink">Mozilla Public License Version 1.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>com.sun.jersey:jersey-client:jar:1.2 (compile) <img id="_444663917" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_721176958', '_444663917' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_721176958" style="display:none"><table class="bodyTable"><tr class="b"><th>jersey-client</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
         production quality Reference Implementation for building
         RESTful Web services.</p>
-<p><a href="https://jersey.dev.java.net/jersey-test-framework-grizzly" class="externalLink">https://jersey.dev.java.net/jersey-test-framework-grizzly</a></p>
-<p><a name="com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar"><b>Jersey Test Framework - Core</b></a></p>
-<p>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+<p><b>URL: </b><a href="https://jersey.dev.java.net/jersey-client" class="externalLink">https://jersey.dev.java.net/jersey-client</a></p>
+<p><b>Project License: </b><a href="https://jersey.dev.java.net/CDDL+GPL.html" class="externalLink">CDDL+GPL License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>com.sun.jersey.contribs:jersey-multipart:jar:1.2 (compile) <img id="_729072785" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_151479048', '_729072785' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_151479048" style="display:none"><table class="bodyTable"><tr class="b"><th>jersey-multipart</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Projects that provide additional functionality to jersey, like integration
+        with other projects/frameworks.</p>
+<p><b>URL: </b><a href="https://jersey.dev.java.net/jersey-contribs/jersey-multipart" class="externalLink">https://jersey.dev.java.net/jersey-contribs/jersey-multipart</a></p>
+<p><b>Project License: </b><a href="https://jersey.dev.java.net/CDDL+GPL.html" class="externalLink">CDDL+GPL License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>eu.medsea.mimeutil:mime-util:jar:2.1.3 (compile) <img id="_859766007" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1408764280', '_859766007' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1408764280" style="display:none"><table class="bodyTable"><tr class="b"><th>Mime Detection Utility</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>mime-util is a simple to use, small, light weight and fast open source java utility library that can detect
+		MIME types from files, input streams, URL's and byte arrays.
+		Due to the use of regular expressions and the java.nio packages it requires at least Java 1.4.</p>
+<p><b>URL: </b><a href="http://www.medsea.eu/mime-util/" class="externalLink">http://www.medsea.eu/mime-util/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>com.sun.jersey:jersey-client:jar:1.2 (compile) <img id="_1465597897" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1272275962', '_1465597897' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1272275962" style="display:none"><table class="bodyTable"><tr class="b"><th>jersey-client</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
         production quality Reference Implementation for building
         RESTful Web services.</p>
-<p><a href="https://jersey.dev.java.net/jersey-test-framework-core" class="externalLink">https://jersey.dev.java.net/jersey-test-framework-core</a></p>
-<p><a name="com.sun.jersey:jersey-server:jar"><b>jersey-server</b></a></p>
-<p>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+<p><b>URL: </b><a href="https://jersey.dev.java.net/jersey-client" class="externalLink">https://jersey.dev.java.net/jersey-client</a></p>
+<p><b>Project License: </b><a href="https://jersey.dev.java.net/CDDL+GPL.html" class="externalLink">CDDL+GPL License</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.sun.jersey:jersey-core:jar:1.2 (compile) <img id="_1828013704" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_179626243', '_1828013704' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_179626243" style="display:none"><table class="bodyTable"><tr class="b"><th>jersey-core</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
         production quality Reference Implementation for building
         RESTful Web services.</p>
-<p><a href="https://jersey.dev.java.net/jersey-server" class="externalLink">https://jersey.dev.java.net/jersey-server</a></p>
-<p><a name="com.sun.jersey:jersey-client:jar"><b>jersey-client</b></a></p>
-<p>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+<p><b>URL: </b><a href="https://jersey.dev.java.net/jersey-core" class="externalLink">https://jersey.dev.java.net/jersey-core</a></p>
+<p><b>Project License: </b><a href="https://jersey.dev.java.net/CDDL+GPL.html" class="externalLink">CDDL+GPL License</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>javax.ws.rs:jsr311-api:jar:1.1.1 (compile) <img id="_1959764798" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_596686534', '_1959764798' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_596686534" style="display:none"><table class="bodyTable"><tr class="b"><th>jsr311-api</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="https://jsr311.dev.java.net" class="externalLink">https://jsr311.dev.java.net</a></p>
+<p><b>Project License: </b><a href="http://www.opensource.org/licenses/cddl1.php" class="externalLink">CDDL License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>com.sun.jersey.contribs:jersey-multipart:jar:1.2 (compile) <img id="_862351539" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_53246012', '_862351539' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_53246012" style="display:none"><table class="bodyTable"><tr class="b"><th>jersey-multipart</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Projects that provide additional functionality to jersey, like integration
+        with other projects/frameworks.</p>
+<p><b>URL: </b><a href="https://jersey.dev.java.net/jersey-contribs/jersey-multipart" class="externalLink">https://jersey.dev.java.net/jersey-contribs/jersey-multipart</a></p>
+<p><b>Project License: </b><a href="https://jersey.dev.java.net/CDDL+GPL.html" class="externalLink">CDDL+GPL License</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.sun.jersey:jersey-core:jar:1.2 (compile) <img id="_1287951930" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1820964937', '_1287951930' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1820964937" style="display:none"><table class="bodyTable"><tr class="b"><th>jersey-core</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
         production quality Reference Implementation for building
         RESTful Web services.</p>
-<p><a href="https://jersey.dev.java.net/jersey-client" class="externalLink">https://jersey.dev.java.net/jersey-client</a></p>
-<p><a name="org.glassfish:javax.servlet:jar"><b>javax.servlet API v.3.0</b></a></p>
-<p><a href="http://jcp.org/en/jsr/detail?id=315" class="externalLink">http://jcp.org/en/jsr/detail?id=315</a></p>
-<p><a name="com.sun.grizzly:grizzly-servlet-webserver:jar"><b>grizzly-servlet-webserver</b></a></p>
-<p><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
-<p><a name="com.sun.grizzly:grizzly-http:jar"><b>grizzly-http</b></a></p>
-<p><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
-<p><a name="com.sun.grizzly:grizzly-rcm:jar"><b>grizzly-rcm</b></a></p>
-<p><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
-<p><a name="com.sun.grizzly:grizzly-portunif:jar"><b>grizzly-portunif</b></a></p>
-<p><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
-<p><a name="com.sun.grizzly:grizzly-framework:jar"><b>grizzly-framework</b></a></p>
-<p><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
-<p><a name="com.sun.grizzly:grizzly-http-servlet:jar"><b>grizzly-http-servlet</b></a></p>
-<p><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
-<p><a name="com.sun.grizzly:grizzly-utils:jar"><b>grizzly-utils</b></a></p>
-<p><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
-<p><a name="junit:junit:jar"><b>JUnit</b></a></p>
-<p>JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.</p>
-<p><a href="http://junit.org" class="externalLink">http://junit.org</a></p>
-<p><a name="javax.servlet:servlet-api:jar"><b>Unnamed - javax.servlet:servlet-api:jar:2.5</b></a></p>
+<p><b>URL: </b><a href="https://jersey.dev.java.net/jersey-core" class="externalLink">https://jersey.dev.java.net/jersey-core</a></p>
+<p><b>Project License: </b><a href="https://jersey.dev.java.net/CDDL+GPL.html" class="externalLink">CDDL+GPL License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.jvnet:mimepull:jar:1.4 (compile) <img id="_198143689" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_152313236', '_198143689' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_152313236" style="display:none"><table class="bodyTable"><tr class="b"><th>MIME streaming extension</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Provides a streaming API to access attachments parts in a MIME message.</p>
+<p><b>Project License: </b><a href="http://www.opensource.org/licenses/cddl1.php" class="externalLink">COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0</a><a href="http://www.gnu.org/software/classpath/license.html" class="externalLink">GPLv2 with classpath exception</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>com.sun.jersey:jersey-server:jar:1.2 (compile) <img id="_714516312" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_680497061', '_714516312' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_680497061" style="display:none"><table class="bodyTable"><tr class="b"><th>jersey-server</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+        production quality Reference Implementation for building
+        RESTful Web services.</p>
+<p><b>URL: </b><a href="https://jersey.dev.java.net/jersey-server" class="externalLink">https://jersey.dev.java.net/jersey-server</a></p>
+<p><b>Project License: </b><a href="https://jersey.dev.java.net/CDDL+GPL.html" class="externalLink">CDDL+GPL License</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.sun.jersey:jersey-core:jar:1.2 (compile) <img id="_565429644" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_355209437', '_565429644' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_355209437" style="display:none"><table class="bodyTable"><tr class="b"><th>jersey-core</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+        production quality Reference Implementation for building
+        RESTful Web services.</p>
+<p><b>URL: </b><a href="https://jersey.dev.java.net/jersey-core" class="externalLink">https://jersey.dev.java.net/jersey-core</a></p>
+<p><b>Project License: </b><a href="https://jersey.dev.java.net/CDDL+GPL.html" class="externalLink">CDDL+GPL License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>asm:asm:jar:3.1 (compile) <img id="_1281163978" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_92036978', '_1281163978' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_92036978" style="display:none"><table class="bodyTable"><tr class="b"><th>ASM Core</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>A very small and fast Java bytecode manipulation framework</p>
+<p><b>URL: </b><a href="http://asm.objectweb.org/asm" class="externalLink">http://asm.objectweb.org/asm</a></p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>com.sun.jersey:jersey-json:jar:1.2 (compile) <img id="_73734949" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_342330695', '_73734949' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_342330695" style="display:none"><table class="bodyTable"><tr class="b"><th>jersey-json</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+        production quality Reference Implementation for building
+        RESTful Web services.</p>
+<p><b>URL: </b><a href="https://jersey.dev.java.net/jersey-json" class="externalLink">https://jersey.dev.java.net/jersey-json</a></p>
+<p><b>Project License: </b><a href="https://jersey.dev.java.net/CDDL+GPL.html" class="externalLink">CDDL+GPL License</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.sun.jersey:jersey-core:jar:1.2 (compile) <img id="_1818514026" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_716199737', '_1818514026' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_716199737" style="display:none"><table class="bodyTable"><tr class="b"><th>jersey-core</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+        production quality Reference Implementation for building
+        RESTful Web services.</p>
+<p><b>URL: </b><a href="https://jersey.dev.java.net/jersey-core" class="externalLink">https://jersey.dev.java.net/jersey-core</a></p>
+<p><b>Project License: </b><a href="https://jersey.dev.java.net/CDDL+GPL.html" class="externalLink">CDDL+GPL License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.codehaus.jettison:jettison:jar:1.1 (compile) <img id="_2130489318" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_624807183', '_2130489318' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_624807183" style="display:none"><table class="bodyTable"><tr class="b"><th>Jettison</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>A StAX implementation for JSON.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div><ul><li>stax:stax-api:jar:1.0.1 (compile) <img id="_49655358" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_97833087', '_49655358' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_97833087" style="display:none"><table class="bodyTable"><tr class="b"><th>StAX API</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>StAX API is the standard java XML processing API defined by JSR-173</p>
+<p><b>URL: </b><a href="http://stax.codehaus.org/" class="externalLink">http://stax.codehaus.org/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>com.sun.xml.bind:jaxb-impl:jar:2.1.12 (compile) <img id="_106495239" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1149615079', '_106495239' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1149615079" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - com.sun.xml.bind:jaxb-impl:jar:2.1.12</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div><ul><li>javax.xml.bind:jaxb-api:jar:2.1 (compile) <img id="_971918279" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_136827334', '_971918279' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_136827334" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - javax.xml.bind:jaxb-api:jar:2.1</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div><ul><li>javax.xml.stream:stax-api:jar:1.0-2 (compile) <img id="_871395838" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1910659475', '_871395838' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1910659475" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - javax.xml.stream:stax-api:jar:1.0-2</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>javax.activation:activation:jar:1.1 (compile) <img id="_582141352" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1162278599', '_582141352' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1162278599" style="display:none"><table class="bodyTable"><tr class="b"><th>JavaBeans Activation Framework (JAF)</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>JavaBeans Activation Framework (JAF) is a standard extension to the Java platform that lets you take advantage of standard services to: determine the type of an arbitrary piece of data; encapsulate access to it; discover the operations available on it; and instantiate the appropriate bean to perform the operation(s).</p>
+<p><b>URL: </b><a href="http://java.sun.com/products/javabeans/jaf/index.jsp" class="externalLink">http://java.sun.com/products/javabeans/jaf/index.jsp</a></p>
+<p><b>Project License: </b><a href="https://glassfish.dev.java.net/public/CDDLv1.0.html" class="externalLink">Common Development and Distribution License (CDDL) v1.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>org.codehaus.jackson:jackson-core-asl:jar:1.1.1 (compile) <img id="_1670156550" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1276760182', '_1670156550' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1276760182" style="display:none"><table class="bodyTable"><tr class="b"><th>Jackson</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Jackson is a high-performance JSON processor (parser, generator)</p>
+<p><b>URL: </b><a href="http://jackson.codehaus.org" class="externalLink">http://jackson.codehaus.org</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>commons-fileupload:commons-fileupload:jar:1.2.1 (compile) <img id="_2130182494" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_781276289', '_2130182494' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_781276289" style="display:none"><table class="bodyTable"><tr class="b"><th>Commons FileUpload</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>The FileUpload component provides a simple yet flexible means of adding support for multipart
+    file upload functionality to servlets and web applications.</p>
+<p><b>URL: </b><a href="http://commons.apache.org/fileupload/" class="externalLink">http://commons.apache.org/fileupload/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>eu.medsea.mimeutil:mime-util:jar:2.1.3 (compile) <img id="_2093485592" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2100199123', '_2093485592' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2100199123" style="display:none"><table class="bodyTable"><tr class="b"><th>Mime Detection Utility</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>mime-util is a simple to use, small, light weight and fast open source java utility library that can detect
+		MIME types from files, input streams, URL's and byte arrays.
+		Due to the use of regular expressions and the java.nio packages it requires at least Java 1.4.</p>
+<p><b>URL: </b><a href="http://www.medsea.eu/mime-util/" class="externalLink">http://www.medsea.eu/mime-util/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.slf4j:slf4j-api:jar:1.5.6 (compile) <img id="_311549719" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1898367584', '_311549719' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1898367584" style="display:none"><table class="bodyTable"><tr class="b"><th>SLF4J API Module</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>The slf4j API</p>
+<p><b>URL: </b><a href="http://www.slf4j.org" class="externalLink">http://www.slf4j.org</a></p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.slf4j:slf4j-log4j12:jar:1.5.6 (runtime) <img id="_684558261" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1945149167', '_684558261' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1945149167" style="display:none"><table class="bodyTable"><tr class="b"><th>SLF4J LOG4J-12 Binding</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>The slf4j log4j-12 binding</p>
+<p><b>URL: </b><a href="http://www.slf4j.org" class="externalLink">http://www.slf4j.org</a></p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.slf4j:slf4j-api:jar:1.5.6 (runtime) <img id="_1907999511" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_345304265', '_1907999511' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_345304265" style="display:none"><table class="bodyTable"><tr class="b"><th>SLF4J API Module</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>The slf4j API</p>
+<p><b>URL: </b><a href="http://www.slf4j.org" class="externalLink">http://www.slf4j.org</a></p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>log4j:log4j:jar:1.2.14 (runtime) <img id="_412505060" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_721665193', '_412505060' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_721665193" style="display:none"><table class="bodyTable"><tr class="b"><th>Log4j</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Log4j</p>
+<p><b>URL: </b><a href="http://logging.apache.org/log4j/docs/" class="externalLink">http://logging.apache.org/log4j/docs/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>log4j:log4j:jar:1.2.14 (runtime) <img id="_1699354208" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1795171806', '_1699354208' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1795171806" style="display:none"><table class="bodyTable"><tr class="b"><th>Log4j</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Log4j</p>
+<p><b>URL: </b><a href="http://logging.apache.org/log4j/docs/" class="externalLink">http://logging.apache.org/log4j/docs/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly:jar:1.2 (test) <img id="_1340997287" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1963806545', '_1340997287' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1963806545" style="display:none"><table class="bodyTable"><tr class="b"><th>Jersey Test Framework - Grizzly Module</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+        production quality Reference Implementation for building
+        RESTful Web services.</p>
+<p><b>URL: </b><a href="https://jersey.dev.java.net/jersey-test-framework-grizzly" class="externalLink">https://jersey.dev.java.net/jersey-test-framework-grizzly</a></p>
+<p><b>Project License: </b><a href="https://jersey.dev.java.net/CDDL+GPL.html" class="externalLink">CDDL+GPL License</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar:1.2 (test) <img id="_626915286" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_187686908', '_626915286' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_187686908" style="display:none"><table class="bodyTable"><tr class="b"><th>Jersey Test Framework - Core</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+        production quality Reference Implementation for building
+        RESTful Web services.</p>
+<p><b>URL: </b><a href="https://jersey.dev.java.net/jersey-test-framework-core" class="externalLink">https://jersey.dev.java.net/jersey-test-framework-core</a></p>
+<p><b>Project License: </b><a href="https://jersey.dev.java.net/CDDL+GPL.html" class="externalLink">CDDL+GPL License</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.sun.jersey:jersey-server:jar:1.2 (test) <img id="_1240922329" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_86486031', '_1240922329' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_86486031" style="display:none"><table class="bodyTable"><tr class="b"><th>jersey-server</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+        production quality Reference Implementation for building
+        RESTful Web services.</p>
+<p><b>URL: </b><a href="https://jersey.dev.java.net/jersey-server" class="externalLink">https://jersey.dev.java.net/jersey-server</a></p>
+<p><b>Project License: </b><a href="https://jersey.dev.java.net/CDDL+GPL.html" class="externalLink">CDDL+GPL License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>com.sun.jersey:jersey-client:jar:1.2 (test) <img id="_589529538" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_126283742', '_589529538' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_126283742" style="display:none"><table class="bodyTable"><tr class="b"><th>jersey-client</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)
+        production quality Reference Implementation for building
+        RESTful Web services.</p>
+<p><b>URL: </b><a href="https://jersey.dev.java.net/jersey-client" class="externalLink">https://jersey.dev.java.net/jersey-client</a></p>
+<p><b>Project License: </b><a href="https://jersey.dev.java.net/CDDL+GPL.html" class="externalLink">CDDL+GPL License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.glassfish:javax.servlet:jar:3.0-b66 (test) <img id="_946132588" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_785279666', '_946132588' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_785279666" style="display:none"><table class="bodyTable"><tr class="b"><th>javax.servlet API v.3.0</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="http://jcp.org/en/jsr/detail?id=315" class="externalLink">http://jcp.org/en/jsr/detail?id=315</a></p>
+<p><b>Project License: </b><a href="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html" class="externalLink">CDDL + GPLv2 with classpath exception</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>junit:junit:jar:4.8.1 (test) <img id="_1518114948" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_793323856', '_1518114948' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_793323856" style="display:none"><table class="bodyTable"><tr class="b"><th>JUnit</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.</p>
+<p><b>URL: </b><a href="http://junit.org" class="externalLink">http://junit.org</a></p>
+<p><b>Project License: </b><a href="http://www.opensource.org/licenses/cpl1.0.txt" class="externalLink">Common Public License Version 1.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>com.sun.grizzly:grizzly-servlet-webserver:jar:1.9.18-i (test) <img id="_1729965685" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_914689962', '_1729965685' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_914689962" style="display:none"><table class="bodyTable"><tr class="b"><th>grizzly-servlet-webserver</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
+<p><b>Project License: </b><a href="https://glassfish.dev.java.net/public/CDDLv1.0.html" class="externalLink">CDDL</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.sun.grizzly:grizzly-http:jar:1.9.18-i (test) <img id="_1899568524" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1958503420', '_1899568524' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1958503420" style="display:none"><table class="bodyTable"><tr class="b"><th>grizzly-http</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
+<p><b>Project License: </b><a href="https://glassfish.dev.java.net/public/CDDLv1.0.html" class="externalLink">CDDL</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.sun.grizzly:grizzly-framework:jar:1.9.18-i (test) <img id="_1101719830" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_240782040', '_1101719830' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_240782040" style="display:none"><table class="bodyTable"><tr class="b"><th>grizzly-framework</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
+<p><b>Project License: </b><a href="https://glassfish.dev.java.net/public/CDDLv1.0.html" class="externalLink">CDDL</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.sun.grizzly:grizzly-utils:jar:1.9.18-i (test) <img id="_1233803294" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1136573161', '_1233803294' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1136573161" style="display:none"><table class="bodyTable"><tr class="b"><th>grizzly-utils</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
+<p><b>Project License: </b><a href="https://glassfish.dev.java.net/public/CDDLv1.0.html" class="externalLink">CDDL</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>com.sun.grizzly:grizzly-rcm:jar:1.9.18-i (test) <img id="_1839621068" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1883009746', '_1839621068' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1883009746" style="display:none"><table class="bodyTable"><tr class="b"><th>grizzly-rcm</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
+<p><b>Project License: </b><a href="https://glassfish.dev.java.net/public/CDDLv1.0.html" class="externalLink">CDDL</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.sun.grizzly:grizzly-framework:jar:1.9.18-i (test) <img id="_1469156478" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1186998782', '_1469156478' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1186998782" style="display:none"><table class="bodyTable"><tr class="b"><th>grizzly-framework</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
+<p><b>Project License: </b><a href="https://glassfish.dev.java.net/public/CDDLv1.0.html" class="externalLink">CDDL</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>com.sun.grizzly:grizzly-portunif:jar:1.9.18-i (test) <img id="_443960883" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1857781451', '_443960883' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1857781451" style="display:none"><table class="bodyTable"><tr class="b"><th>grizzly-portunif</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
+<p><b>Project License: </b><a href="https://glassfish.dev.java.net/public/CDDLv1.0.html" class="externalLink">CDDL</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.sun.grizzly:grizzly-framework:jar:1.9.18-i (test) <img id="_1913159738" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1713961160', '_1913159738' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1713961160" style="display:none"><table class="bodyTable"><tr class="b"><th>grizzly-framework</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
+<p><b>Project License: </b><a href="https://glassfish.dev.java.net/public/CDDLv1.0.html" class="externalLink">CDDL</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>com.sun.grizzly:grizzly-http-servlet:jar:1.9.18-i (test) <img id="_79009313" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1351851727', '_79009313' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1351851727" style="display:none"><table class="bodyTable"><tr class="b"><th>grizzly-http-servlet</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
+<p><b>Project License: </b><a href="https://glassfish.dev.java.net/public/CDDLv1.0.html" class="externalLink">CDDL</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.sun.grizzly:grizzly-utils:jar:1.9.18-i (test) <img id="_668546306" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_429779900', '_668546306' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_429779900" style="display:none"><table class="bodyTable"><tr class="b"><th>grizzly-utils</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="https://grizzly.dev.java.net" class="externalLink">https://grizzly.dev.java.net</a></p>
+<p><b>Project License: </b><a href="https://glassfish.dev.java.net/public/CDDLv1.0.html" class="externalLink">CDDL</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>javax.servlet:servlet-api:jar:2.5 (provided) <img id="_420715939" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1226890485', '_420715939' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1226890485" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - javax.servlet:servlet-api:jar:2.5</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>junit:junit:jar:4.8.1 (test) <img id="_1113213519" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2109741282', '_1113213519' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2109741282" style="display:none"><table class="bodyTable"><tr class="b"><th>JUnit</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.</p>
+<p><b>URL: </b><a href="http://junit.org" class="externalLink">http://junit.org</a></p>
+<p><b>Project License: </b><a href="http://www.opensource.org/licenses/cpl1.0.txt" class="externalLink">Common Public License Version 1.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>javax.servlet:servlet-api:jar:2.5 (provided) <img id="_1934929240" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1393208019', '_1934929240' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1393208019" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - javax.servlet:servlet-api:jar:2.5</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>xmlunit:xmlunit:jar:1.3 (test) <img id="_987886961" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1464990788', '_987886961' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1464990788" style="display:none"><table class="bodyTable"><tr class="b"><th>XMLUnit for Java</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>XMLUnit compares a control XML document to a test document or the result of a transformation, validates documents, and compares the results of XPath expressions.</p>
+<p><b>URL: </b><a href="http://xmlunit.sourceforge.net/" class="externalLink">http://xmlunit.sourceforge.net/</a></p>
+<p><b>Project License: </b><a href="http://xmlunit.svn.sourceforge.net/viewvc/*checkout*/xmlunit/trunk/xmlunit/LICENSE.txt" class="externalLink">BSD License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
 </div>
+</div>
+<a name="Licenses"></a><div class="section"><h2>Licenses</h2>
+<p><b>ICU License: </b>ICU4J</p>
+<p><b>CDDL + GPLv2 with classpath exception: </b>javax.servlet API v.3.0</p>
+<p><b>Apache 2: </b>Joda time</p>
+<p><b>Unknown: </b>ASM Core, Jettison, SLF4J API Module, SLF4J LOG4J-12 Binding, Unnamed - com.sun.xml.bind:jaxb-impl:jar:2.1.12, Unnamed - javax.servlet:servlet-api:jar:2.5, Unnamed - javax.xml.bind:jaxb-api:jar:2.1, Unnamed - javax.xml.stream:stax-api:jar:1.0-2, Unnamed - xerces:xercesImpl:jar:2.7.1</p>
+<p><b>BSD: </b>Jena</p>
+<p><b>BSD-style license: </b>Jena IRI</p>
+<p><b>Mozilla Public License Version 1.0: </b>SaxonB</p>
+<p><b>COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0: </b>MIME streaming extension</p>
+<p><b>GPLv2 with classpath exception: </b>MIME streaming extension</p>
+<p><b>The Apache Software License, Version 2.0: </b>Commons FileUpload, Jackson, Log4j, Mime Detection Utility, StAX API</p>
+<p><b>GNU Lesser General Public License, Version 3.0: </b>MediaShelf fedora-client</p>
+<p><b>CDDL License: </b>jsr311-api</p>
+<p><b>GNU General Public License, Version 3.0: </b>Scorm2Fedora Core, Scorm2Fedora Webapp</p>
+<p><b>CDDL: </b>grizzly-framework, grizzly-http, grizzly-http-servlet, grizzly-portunif, grizzly-rcm, grizzly-servlet-webserver, grizzly-utils</p>
+<p><b>BSD License: </b>XMLUnit for Java</p>
+<p><b>CDDL+GPL License: </b>Jersey Test Framework - Core, Jersey Test Framework - Grizzly Module, jersey-client, jersey-core, jersey-json, jersey-multipart, jersey-server</p>
+<p><b>Common Public License Version 1.0: </b>JUnit</p>
+<p><b>Common Development and Distribution License (CDDL) v1.0: </b>JavaBeans Activation Framework (JAF)</p>
+</div>
+<a name="Dependency_File_Details"></a><div class="section"><h2>Dependency File Details</h2>
+<table class="bodyTable"><tbody><tr class="b"><th align="left">Filename</th>
+<th align="right">Size</th>
+<th align="right">Entries</th>
+<th align="right">Classes</th>
+<th align="right">Packages</th>
+<th align="center">JDK Rev</th>
+<th align="center">Debug</th>
+</tr>
+<tr class="a"><td align="left">asm-3.1.jar</td>
+<td align="right">42.02 kB</td>
+<td align="right">24</td>
+<td align="right">23</td>
+<td align="right">2</td>
+<td align="center">1.2</td>
+<td align="center">release</td>
+</tr>
+<tr class="b"><td align="left">iri-0.7.jar</td>
+<td align="right">147.79 kB</td>
+<td align="right">78</td>
+<td align="right">62</td>
+<td align="right">2</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">jena-2.6.2.jar</td>
+<td align="right">1.79 MB</td>
+<td align="right">1,494</td>
+<td align="right">1,383</td>
+<td align="right">48</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">icu4j-3.4.4.jar</td>
+<td align="right">3.08 MB</td>
+<td align="right">1,073</td>
+<td align="right">525</td>
+<td align="right">6</td>
+<td align="center">1.3</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">grizzly-framework-1.9.18-i.jar</td>
+<td align="right">228.43 kB</td>
+<td align="right">183</td>
+<td align="right">161</td>
+<td align="right">10</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">grizzly-http-1.9.18-i.jar</td>
+<td align="right">152.93 kB</td>
+<td align="right">96</td>
+<td align="right">77</td>
+<td align="right">7</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">grizzly-http-servlet-1.9.18-i.jar</td>
+<td align="right">45.60 kB</td>
+<td align="right">39</td>
+<td align="right">27</td>
+<td align="right">1</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">grizzly-portunif-1.9.18-i.jar</td>
+<td align="right">18.19 kB</td>
+<td align="right">21</td>
+<td align="right">10</td>
+<td align="right">1</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">grizzly-rcm-1.9.18-i.jar</td>
+<td align="right">9.19 kB</td>
+<td align="right">13</td>
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">grizzly-servlet-webserver-1.9.18-i.jar</td>
+<td align="right">984.05 kB</td>
+<td align="right">662</td>
+<td align="right">578</td>
+<td align="right">34</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">grizzly-utils-1.9.18-i.jar</td>
+<td align="right">437.02 kB</td>
+<td align="right">293</td>
+<td align="right">258</td>
+<td align="right">11</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">jersey-client-1.2.jar</td>
+<td align="right">109.47 kB</td>
+<td align="right">106</td>
+<td align="right">82</td>
+<td align="right">10</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">jersey-core-1.2.jar</td>
+<td align="right">362.47 kB</td>
+<td align="right">316</td>
+<td align="right">271</td>
+<td align="right">22</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">jersey-json-1.2.jar</td>
+<td align="right">131.22 kB</td>
+<td align="right">110</td>
+<td align="right">88</td>
+<td align="right">5</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">jersey-server-1.2.jar</td>
+<td align="right">947.51 kB</td>
+<td align="right">843</td>
+<td align="right">732</td>
+<td align="right">76</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">jersey-multipart-1.2.jar</td>
+<td align="right">44.08 kB</td>
+<td align="right">44</td>
+<td align="right">28</td>
+<td align="right">3</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">jersey-test-framework-core-1.2.jar</td>
+<td align="right">24.51 kB</td>
+<td align="right">36</td>
+<td align="right">19</td>
+<td align="right">4</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">jersey-test-framework-grizzly-1.2.jar</td>
+<td align="right">12.40 kB</td>
+<td align="right">23</td>
+<td align="right">5</td>
+<td align="right">2</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">jaxb-impl-2.1.12.jar</td>
+<td align="right">847.46 kB</td>
+<td align="right">703</td>
+<td align="right">655</td>
+<td align="right">29</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">fedora-client-0.0.7.jar</td>
+<td align="right">53.44 kB</td>
+<td align="right">56</td>
+<td align="right">41</td>
+<td align="right">5</td>
+<td align="center">1.6</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">scorm2fedora-core-0.0.2.jar</td>
+<td align="right">13.78 kB</td>
+<td align="right">24</td>
+<td align="right">6</td>
+<td align="right">4</td>
+<td align="center">1.6</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">commons-fileupload-1.2.1.jar</td>
+<td align="right">56.42 kB</td>
+<td align="right">60</td>
+<td align="right">43</td>
+<td align="right">5</td>
+<td align="center">1.3</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">mime-util-2.1.3.jar</td>
+<td align="right">116.39 kB</td>
+<td align="right">44</td>
+<td align="right">26</td>
+<td align="right">4</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">activation-1.1.jar</td>
+<td align="right">61.51 kB</td>
+<td align="right">50</td>
+<td align="right">38</td>
+<td align="right">3</td>
+<td align="center">1.4</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">servlet-api-2.5.jar</td>
+<td align="right">102.65 kB</td>
+<td align="right">68</td>
+<td align="right">42</td>
+<td align="right">2</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">jsr311-api-1.1.1.jar</td>
+<td align="right">45.28 kB</td>
+<td align="right">67</td>
+<td align="right">55</td>
+<td align="right">3</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">jaxb-api-2.1.jar</td>
+<td align="right">87.86 kB</td>
+<td align="right">113</td>
+<td align="right">100</td>
+<td align="right">6</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">stax-api-1.0-2.jar</td>
+<td align="right">22.80 kB</td>
+<td align="right">44</td>
+<td align="right">37</td>
+<td align="right">3</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">joda-time-1.6.jar</td>
+<td align="right">522.29 kB</td>
+<td align="right">675</td>
+<td align="right">222</td>
+<td align="right">7</td>
+<td align="center">1.3</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">junit-4.8.1.jar</td>
+<td align="right">231.49 kB</td>
+<td align="right">267</td>
+<td align="right">230</td>
+<td align="right">30</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">log4j-1.2.14.jar</td>
+<td align="right">358.83 kB</td>
+<td align="right">288</td>
+<td align="right">256</td>
+<td align="right">19</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">saxon-9.1.0.8.jar</td>
+<td align="right">4.81 MB</td>
+<td align="right">1,172</td>
+<td align="right">1,141</td>
+<td align="right">25</td>
+<td align="center">1.4</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">jackson-core-asl-1.1.1.jar</td>
+<td align="right">102.00 kB</td>
+<td align="right">98</td>
+<td align="right">84</td>
+<td align="right">7</td>
+<td align="center">1.5</td>
+<td align="center">release</td>
+</tr>
+<tr class="b"><td align="left">jettison-1.1.jar</td>
+<td align="right">66.17 kB</td>
+<td align="right">55</td>
+<td align="right">40</td>
+<td align="right">5</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">javax.servlet-3.0-b66.jar</td>
+<td align="right">73.62 kB</td>
+<td align="right">85</td>
+<td align="right">65</td>
+<td align="right">4</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">mimepull-1.4.jar</td>
+<td align="right">38.25 kB</td>
+<td align="right">42</td>
+<td align="right">32</td>
+<td align="right">1</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">slf4j-api-1.5.6.jar</td>
+<td align="right">21.81 kB</td>
+<td align="right">32</td>
+<td align="right">21</td>
+<td align="right">3</td>
+<td align="center">1.3</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">slf4j-log4j12-1.5.6.jar</td>
+<td align="right">9.45 kB</td>
+<td align="right">16</td>
+<td align="right">6</td>
+<td align="right">1</td>
+<td align="center">1.3</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">stax-api-1.0.1.jar</td>
+<td align="right">25.89 kB</td>
+<td align="right">48</td>
+<td align="right">40</td>
+<td align="right">5</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">xercesImpl-2.7.1.jar</td>
+<td align="right">1.15 MB</td>
+<td align="right">938</td>
+<td align="right">870</td>
+<td align="right">38</td>
+<td align="center">1.1</td>
+<td align="center">release</td>
+</tr>
+<tr class="a"><td align="left">xmlunit-1.3.jar</td>
+<td align="right">94.48 kB</td>
+<td align="right">77</td>
+<td align="right">68</td>
+<td align="right">5</td>
+<td align="center">1.3</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><th align="left">Total</th>
+<th align="right">Size</th>
+<th align="right">Entries</th>
+<th align="right">Classes</th>
+<th align="right">Packages</th>
+<th align="center">JDK Rev</th>
+<th align="center">Debug</th>
+</tr>
+<tr class="a"><td align="right">41</td>
+<td align="right">17.33 MB</td>
+<td align="right">10,476</td>
+<td align="right">8,449</td>
+<td align="right">459</td>
+<td align="center">1.6</td>
+<td align="right">38</td>
+</tr>
+<tr class="b"><td align="right">compile: 26</td>
+<td align="right">compile: 14.61 MB</td>
+<td align="right">compile: 8,309</td>
+<td align="right">compile: 6,645</td>
+<td align="right">compile: 327</td>
+<td align="center">-</td>
+<td align="right">compile: 23</td>
+</tr>
+<tr class="a"><td align="right">test: 12</td>
+<td align="right">test: 2.26 MB</td>
+<td align="right">test: 1,795</td>
+<td align="right">test: 1,500</td>
+<td align="right">test: 110</td>
+<td align="center">-</td>
+<td align="right">test: 12</td>
+</tr>
+<tr class="b"><td align="right">runtime: 2</td>
+<td align="right">runtime: 368.28 kB</td>
+<td align="right">runtime: 304</td>
+<td align="right">runtime: 262</td>
+<td align="right">runtime: 20</td>
+<td align="center">-</td>
+<td align="right">runtime: 2</td>
+</tr>
+<tr class="a"><td align="right">provided: 1</td>
+<td align="right">provided: 102.65 kB</td>
+<td align="right">provided: 68</td>
+<td align="right">provided: 42</td>
+<td align="right">provided: 2</td>
+<td align="center">-</td>
+<td align="right">provided: 1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<a name="Dependency_Repository_Locations"></a><div class="section"><h2>Dependency Repository Locations</h2>
+<table class="bodyTable"><tbody><tr class="b"><th align="left">Repo ID</th>
+<th align="left">URL</th>
+<th align="center">Release</th>
+<th align="center">Snapshot</th>
+</tr>
+<tr class="a"><td align="left">duraspace-thirdparty</td>
+<td align="left"><a href="https://fedora-commons.org/m2/content/repositories/thirdparty" class="externalLink">https://fedora-commons.org/m2/content/repositories/thirdparty</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="b"><td align="left">java.net</td>
+<td align="left"><a href="http://download.java.net/maven/1" class="externalLink">http://download.java.net/maven/1</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="a"><td align="left">repo-jena-dev</td>
+<td align="left"><a href="http://openjena.org/repo-dev" class="externalLink">http://openjena.org/repo-dev</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="b"><td align="left">m1.dev.java.net</td>
+<td align="left"><a href="http://download.java.net/maven/1" class="externalLink">http://download.java.net/maven/1</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="a"><td align="left">java.net2</td>
+<td align="left"><a href="http://download.java.net/maven/2" class="externalLink">http://download.java.net/maven/2</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="b"><td align="left">repo-jena</td>
+<td align="left"><a href="http://openjena.org/repo" class="externalLink">http://openjena.org/repo</a></td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">apache.snapshots</td>
+<td align="left"><a href="http://people.apache.org/repo/m2-snapshot-repository" class="externalLink">http://people.apache.org/repo/m2-snapshot-repository</a></td>
+<td align="center">-</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="b"><td align="left">java.net.m2</td>
+<td align="left"><a href="http://download.java.net/maven/2" class="externalLink">http://download.java.net/maven/2</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="a"><td align="left">maven-repository.dev.java.net</td>
+<td align="left"><a href="http://download.java.net/maven/1" class="externalLink">http://download.java.net/maven/1</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="b"><td align="left">codehaus</td>
+<td align="left"><a href="http://repository.codehaus.org" class="externalLink">http://repository.codehaus.org</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="a"><td align="left">glassfish-repository</td>
+<td align="left"><a href="http://download.java.net/maven/glassfish" class="externalLink">http://download.java.net/maven/glassfish</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="b"><td align="left">maven2-repository.dev.java.net</td>
+<td align="left"><a href="http://download.java.net/maven/2/" class="externalLink">http://download.java.net/maven/2/</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="a"><td align="left">m2.dev.java.net</td>
+<td align="left"><a href="http://download.java.net/maven/2" class="externalLink">http://download.java.net/maven/2</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="b"><td align="left">central</td>
+<td align="left"><a href="http://repo1.maven.org/maven2" class="externalLink">http://repo1.maven.org/maven2</a></td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">glassfish-maven2-repository.dev.java.net</td>
+<td align="left"><a href="http://download.java.net/maven/glassfish/" class="externalLink">http://download.java.net/maven/glassfish/</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="b"><td align="left">glassfish-repo-archive</td>
+<td align="left"><a href="http://maven.glassfish.org/content/groups/glassfish" class="externalLink">http://maven.glassfish.org/content/groups/glassfish</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+</tbody>
+</table>
+<p>Repository locations for each of the Dependencies.</p>
+<table class="bodyTable"><tbody><tr class="a"><th align="left">Artifact</th>
+<th align="center">duraspace-thirdparty</th>
+<th align="center">java.net</th>
+<th align="center">repo-jena-dev</th>
+<th align="center">m1.dev.java.net</th>
+<th align="center">java.net2</th>
+<th align="center">repo-jena</th>
+<th align="center">apache.snapshots</th>
+<th align="center">java.net.m2</th>
+<th align="center">maven-repository.dev.java.net</th>
+<th align="center">codehaus</th>
+<th align="center">glassfish-repository</th>
+<th align="center">maven2-repository.dev.java.net</th>
+<th align="center">m2.dev.java.net</th>
+<th align="center">central</th>
+<th align="center">glassfish-maven2-repository.dev.java.net</th>
+<th align="center">glassfish-repo-archive</th>
+</tr>
+<tr class="b"><td align="left">asm:asm:jar:3.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/asm/asm/3.1/asm-3.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/asm/asm/3.1/asm-3.1.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">com.hp.hpl.jena:iri:jar:0.7</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://openjena.org/repo/com/hp/hpl/jena/iri/0.7/iri-0.7.jar" class="externalLink"><img alt="Found at http://openjena.org/repo" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/com/hp/hpl/jena/iri/0.7/iri-0.7.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/hp/hpl/jena/iri/0.7/iri-0.7.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">com.hp.hpl.jena:jena:jar:2.6.2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://openjena.org/repo/com/hp/hpl/jena/jena/2.6.2/jena-2.6.2.jar" class="externalLink"><img alt="Found at http://openjena.org/repo" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/com/hp/hpl/jena/jena/2.6.2/jena-2.6.2.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/hp/hpl/jena/jena/2.6.2/jena-2.6.2.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">com.ibm.icu:icu4j:jar:3.4.4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/com/ibm/icu/icu4j/3.4.4/icu4j-3.4.4.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/ibm/icu/icu4j/3.4.4/icu4j-3.4.4.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">com.sun.grizzly:grizzly-framework:jar:1.9.18-i</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-framework/1.9.18-i/grizzly-framework-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-framework/1.9.18-i/grizzly-framework-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2//com/sun/grizzly/grizzly-framework/1.9.18-i/grizzly-framework-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-framework/1.9.18-i/grizzly-framework-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/sun/grizzly/grizzly-framework/1.9.18-i/grizzly-framework-1.9.18-i.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">com.sun.grizzly:grizzly-http:jar:1.9.18-i</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-http/1.9.18-i/grizzly-http-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-http/1.9.18-i/grizzly-http-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2//com/sun/grizzly/grizzly-http/1.9.18-i/grizzly-http-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-http/1.9.18-i/grizzly-http-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/sun/grizzly/grizzly-http/1.9.18-i/grizzly-http-1.9.18-i.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">com.sun.grizzly:grizzly-http-servlet:jar:1.9.18-i</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-http-servlet/1.9.18-i/grizzly-http-servlet-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-http-servlet/1.9.18-i/grizzly-http-servlet-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2//com/sun/grizzly/grizzly-http-servlet/1.9.18-i/grizzly-http-servlet-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-http-servlet/1.9.18-i/grizzly-http-servlet-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/sun/grizzly/grizzly-http-servlet/1.9.18-i/grizzly-http-servlet-1.9.18-i.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">com.sun.grizzly:grizzly-portunif:jar:1.9.18-i</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-portunif/1.9.18-i/grizzly-portunif-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-portunif/1.9.18-i/grizzly-portunif-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2//com/sun/grizzly/grizzly-portunif/1.9.18-i/grizzly-portunif-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-portunif/1.9.18-i/grizzly-portunif-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/sun/grizzly/grizzly-portunif/1.9.18-i/grizzly-portunif-1.9.18-i.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">com.sun.grizzly:grizzly-rcm:jar:1.9.18-i</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-rcm/1.9.18-i/grizzly-rcm-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-rcm/1.9.18-i/grizzly-rcm-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2//com/sun/grizzly/grizzly-rcm/1.9.18-i/grizzly-rcm-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-rcm/1.9.18-i/grizzly-rcm-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/sun/grizzly/grizzly-rcm/1.9.18-i/grizzly-rcm-1.9.18-i.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">com.sun.grizzly:grizzly-servlet-webserver:jar:1.9.18-i</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-servlet-webserver/1.9.18-i/grizzly-servlet-webserver-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-servlet-webserver/1.9.18-i/grizzly-servlet-webserver-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2//com/sun/grizzly/grizzly-servlet-webserver/1.9.18-i/grizzly-servlet-webserver-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-servlet-webserver/1.9.18-i/grizzly-servlet-webserver-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/sun/grizzly/grizzly-servlet-webserver/1.9.18-i/grizzly-servlet-webserver-1.9.18-i.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">com.sun.grizzly:grizzly-utils:jar:1.9.18-i</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-utils/1.9.18-i/grizzly-utils-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-utils/1.9.18-i/grizzly-utils-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2//com/sun/grizzly/grizzly-utils/1.9.18-i/grizzly-utils-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/grizzly/grizzly-utils/1.9.18-i/grizzly-utils-1.9.18-i.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/sun/grizzly/grizzly-utils/1.9.18-i/grizzly-utils-1.9.18-i.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">com.sun.jersey:jersey-client:jar:1.2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-client/1.2/jersey-client-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-client/1.2/jersey-client-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2//com/sun/jersey/jersey-client/1.2/jersey-client-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-client/1.2/jersey-client-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/sun/jersey/jersey-client/1.2/jersey-client-1.2.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">com.sun.jersey:jersey-core:jar:1.2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-core/1.2/jersey-core-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-core/1.2/jersey-core-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2//com/sun/jersey/jersey-core/1.2/jersey-core-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-core/1.2/jersey-core-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/sun/jersey/jersey-core/1.2/jersey-core-1.2.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">com.sun.jersey:jersey-json:jar:1.2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-json/1.2/jersey-json-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-json/1.2/jersey-json-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2//com/sun/jersey/jersey-json/1.2/jersey-json-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-json/1.2/jersey-json-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/sun/jersey/jersey-json/1.2/jersey-json-1.2.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">com.sun.jersey:jersey-server:jar:1.2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-server/1.2/jersey-server-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-server/1.2/jersey-server-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2//com/sun/jersey/jersey-server/1.2/jersey-server-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-server/1.2/jersey-server-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/sun/jersey/jersey-server/1.2/jersey-server-1.2.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">com.sun.jersey.contribs:jersey-multipart:jar:1.2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/contribs/jersey-multipart/1.2/jersey-multipart-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/contribs/jersey-multipart/1.2/jersey-multipart-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2//com/sun/jersey/contribs/jersey-multipart/1.2/jersey-multipart-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/contribs/jersey-multipart/1.2/jersey-multipart-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/sun/jersey/contribs/jersey-multipart/1.2/jersey-multipart-1.2.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar:1.2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-test-framework/jersey-test-framework-core/1.2/jersey-test-framework-core-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-test-framework/jersey-test-framework-core/1.2/jersey-test-framework-core-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2//com/sun/jersey/jersey-test-framework/jersey-test-framework-core/1.2/jersey-test-framework-core-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-test-framework/jersey-test-framework-core/1.2/jersey-test-framework-core-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/sun/jersey/jersey-test-framework/jersey-test-framework-core/1.2/jersey-test-framework-core-1.2.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly:jar:1.2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-test-framework/jersey-test-framework-grizzly/1.2/jersey-test-framework-grizzly-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-test-framework/jersey-test-framework-grizzly/1.2/jersey-test-framework-grizzly-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2//com/sun/jersey/jersey-test-framework/jersey-test-framework-grizzly/1.2/jersey-test-framework-grizzly-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.java.net/maven/2/com/sun/jersey/jersey-test-framework/jersey-test-framework-grizzly/1.2/jersey-test-framework-grizzly-1.2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/sun/jersey/jersey-test-framework/jersey-test-framework-grizzly/1.2/jersey-test-framework-grizzly-1.2.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">com.sun.xml.bind:jaxb-impl:jar:2.1.12</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/1/com.sun.xml.bind/jars/jaxb-impl-2.1.12.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/1" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/1/com.sun.xml.bind/jars/jaxb-impl-2.1.12.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/1" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/1/com.sun.xml.bind/jars/jaxb-impl-2.1.12.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/1" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-impl-2.1.12.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-impl-2.1.12.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">com.yourmediashelf.fedora.client:fedora-client:jar:0.0.7</td>
+<td align="center"><a href="https://fedora-commons.org/m2/content/repositories/thirdparty/com/yourmediashelf/fedora/client/fedora-client/0.0.7/fedora-client-0.0.7.jar" class="externalLink"><img alt="Found at https://fedora-commons.org/m2/content/repositories/thirdparty" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">com.yourmediashelf.scorm:scorm2fedora-core:jar:0.0.2</td>
+<td align="center"><a href="https://fedora-commons.org/m2/content/repositories/thirdparty/com/yourmediashelf/scorm/scorm2fedora-core/0.0.2/scorm2fedora-core-0.0.2.jar" class="externalLink"><img alt="Found at https://fedora-commons.org/m2/content/repositories/thirdparty" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">commons-fileupload:commons-fileupload:jar:1.2.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-fileupload/commons-fileupload/1.2.1/commons-fileupload-1.2.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/commons-fileupload/commons-fileupload/1.2.1/commons-fileupload-1.2.1.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">eu.medsea.mimeutil:mime-util:jar:2.1.3</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/eu/medsea/mimeutil/mime-util/2.1.3/mime-util-2.1.3.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/eu/medsea/mimeutil/mime-util/2.1.3/mime-util-2.1.3.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">javax.activation:activation:jar:1.1</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/1/javax.activation/jars/activation-1.1.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/1" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/1/javax.activation/jars/activation-1.1.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/1" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/1/javax.activation/jars/activation-1.1.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/1" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/javax/activation/activation/1.1/activation-1.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/javax/activation/activation/1.1/activation-1.1.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">javax.servlet:servlet-api:jar:2.5</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/1/javax.servlet/jars/servlet-api-2.5.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/1" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/1/javax.servlet/jars/servlet-api-2.5.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/1" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/1/javax.servlet/jars/servlet-api-2.5.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/1" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">javax.ws.rs:jsr311-api:jar:1.1.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2//javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.java.net/maven/2/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">javax.xml.bind:jaxb-api:jar:2.1</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/1/javax.xml.bind/jars/jaxb-api-2.1.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/1" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/1/javax.xml.bind/jars/jaxb-api-2.1.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/1" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/1/javax.xml.bind/jars/jaxb-api-2.1.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/1" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.1/jaxb-api-2.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/javax/xml/bind/jaxb-api/2.1/jaxb-api-2.1.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">javax.xml.stream:stax-api:jar:1.0-2</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/1/javax.xml.stream/jars/stax-api-1.0-2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/1" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/1/javax.xml.stream/jars/stax-api-1.0-2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/1" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/1/javax.xml.stream/jars/stax-api-1.0-2.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/1" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">joda-time:joda-time:jar:1.6</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/joda-time/joda-time/1.6/joda-time-1.6.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/joda-time/joda-time/1.6/joda-time-1.6.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">junit:junit:jar:4.8.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/junit/junit/4.8.1/junit-4.8.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/junit/junit/4.8.1/junit-4.8.1.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">log4j:log4j:jar:1.2.14</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/log4j/log4j/1.2.14/log4j-1.2.14.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/log4j/log4j/1.2.14/log4j-1.2.14.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">net.sourceforge.saxon:saxon:jar:9.1.0.8</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/net/sourceforge/saxon/saxon/9.1.0.8/saxon-9.1.0.8.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/net/sourceforge/saxon/saxon/9.1.0.8/saxon-9.1.0.8.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">org.codehaus.jackson:jackson-core-asl:jar:1.1.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repository.codehaus.org/org/codehaus/jackson/jackson-core-asl/1.1.1/jackson-core-asl-1.1.1.jar" class="externalLink"><img alt="Found at http://repository.codehaus.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.1.1/jackson-core-asl-1.1.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/org/codehaus/jackson/jackson-core-asl/1.1.1/jackson-core-asl-1.1.1.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">org.codehaus.jettison:jettison:jar:1.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repository.codehaus.org/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar" class="externalLink"><img alt="Found at http://repository.codehaus.org" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">org.glassfish:javax.servlet:jar:3.0-b66</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/glassfish/org/glassfish/javax.servlet/3.0-b66/javax.servlet-3.0-b66.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/glassfish" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/glassfish//org/glassfish/javax.servlet/3.0-b66/javax.servlet-3.0-b66.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/glassfish/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/org/glassfish/javax.servlet/3.0-b66/javax.servlet-3.0-b66.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">org.jvnet:mimepull:jar:1.4</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/org/jvnet/mimepull/1.4/mimepull-1.4.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2/org/jvnet/mimepull/1.4/mimepull-1.4.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://download.java.net/maven/2//org/jvnet/mimepull/1.4/mimepull-1.4.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://download.java.net/maven/2/org/jvnet/mimepull/1.4/mimepull-1.4.jar" class="externalLink"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/org/jvnet/mimepull/1.4/mimepull-1.4.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">org.slf4j:slf4j-api:jar:1.5.6</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">org.slf4j:slf4j-log4j12:jar:1.5.6</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.5.6/slf4j-log4j12-1.5.6.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/org/slf4j/slf4j-log4j12/1.5.6/slf4j-log4j12-1.5.6.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">stax:stax-api:jar:1.0.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/stax/stax-api/1.0.1/stax-api-1.0.1.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">xerces:xercesImpl:jar:2.7.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/xerces/xercesImpl/2.7.1/xercesImpl-2.7.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/xerces/xercesImpl/2.7.1/xercesImpl-2.7.1.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">xmlunit:xmlunit:jar:1.3</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/xmlunit/xmlunit/1.3/xmlunit-1.3.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center"><a href="http://maven.glassfish.org/content/groups/glassfish/xmlunit/xmlunit/1.3/xmlunit-1.3.jar" class="externalLink"><img alt="Found at http://maven.glassfish.org/content/groups/glassfish" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><th align="left">Total</th>
+<th align="center">duraspace-thirdparty</th>
+<th align="center">java.net</th>
+<th align="center">repo-jena-dev</th>
+<th align="center">m1.dev.java.net</th>
+<th align="center">java.net2</th>
+<th align="center">repo-jena</th>
+<th align="center">apache.snapshots</th>
+<th align="center">java.net.m2</th>
+<th align="center">maven-repository.dev.java.net</th>
+<th align="center">codehaus</th>
+<th align="center">glassfish-repository</th>
+<th align="center">maven2-repository.dev.java.net</th>
+<th align="center">m2.dev.java.net</th>
+<th align="center">central</th>
+<th align="center">glassfish-maven2-repository.dev.java.net</th>
+<th align="center">glassfish-repo-archive</th>
+</tr>
+<tr class="b"><td align="left">41 (compile: 26, test: 12, runtime: 2, provided: 1)</td>
+<td align="center">2</td>
+<td align="center">5</td>
+<td align="center">0</td>
+<td align="center">5</td>
+<td align="center">16</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">16</td>
+<td align="center">5</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">16</td>
+<td align="center">16</td>
+<td align="center">23</td>
+<td align="center">1</td>
+<td align="center">39</td>
+</tr>
+</tbody>
+</table>
 </div>
 
       </div>

@@ -43,8 +43,8 @@
   
     
             <div class="xleft">
-        Last Published: 2010-05-22
-                  &nbsp;| Version: 0.0.2-SNAPSHOT
+        Last Published: 2010-05-29
+                  &nbsp;| Version: 0.0.2
                       </div>
             <div class="xright">            <a href="http://www.yourmediashelf.com/" class="externalLink">MediaShelf</a>
             |
@@ -179,6 +179,9 @@
 <p>See the scorm2fedora GitHub <a href="http://github.com/mediashelf/scorm2fedora/" class="externalLink">project page</a> to download the scorm2fedora webapp.</p>
 <p>At a minimum you will need to configure scorm2fedora so that it can authenticate itself against your Fedora repository.</p>
 <p>Once scorm2fedora has been configured and deployed to your servlet container, SCORM packages can be submitted using HTTP POST requests to the scorm2fedora service endpoint (e.g. http://example.org:8080/scorm2fedora). That's it!</p>
+<p>The JSON response contains the pid and location of the newly created Fedora object, e.g.:</p>
+<div class="source"><pre>{&quot;pid&quot;:&quot;scorm:1&quot;,&quot;location&quot;:&quot;http://localhost:8080/fedora/objects/scorm%3A1&quot;}</pre>
+</div>
 <div class="section"><h3>Configuration</h3>
 <p>Scorm2Fedora supports configuration by web.xml init-params and Java properties files. The following configuration parameters are supported:</p>
 <ul><li>username<ul><li>The username Scorm2Fedora should use to connect to the Fedora Repository, e.g. fedoraAdmin</li>
