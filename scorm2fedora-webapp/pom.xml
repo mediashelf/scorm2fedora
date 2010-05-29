@@ -12,24 +12,6 @@
   <packaging>war</packaging>
   <name>Scorm2Fedora Webapp</name>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-
-  <build>
-    <finalName>scorm2fedora</finalName>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <inherited>true</inherited>
-        <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-
   <dependencies>
     <dependency>
       <groupId>com.yourmediashelf.scorm</groupId>
@@ -67,8 +49,10 @@
 	<dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>
-	  <version>2.5</version>
-	  <scope>provided</scope>
-    </dependency> 
+    </dependency>
+    <dependency>
+      <groupId>xmlunit</groupId>
+      <artifactId>xmlunit</artifactId>
+    </dependency>
   </dependencies>
 </project>

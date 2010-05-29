@@ -20,7 +20,7 @@ import com.yourmediashelf.crosswalk.Crosswalk;
 
 /**
  * Test the IMS Metadata to OAI-DC conversion.
- * 
+ *
  * @see http://www.imsglobal.org/metadata/imsmdv1p2p1/imsmd_bestv1p2p1.html#1242547
  *
  * @author Edwin Shin
@@ -166,14 +166,14 @@ public class ImsmdToOaidcTest {
         sb.append("</imsmd:lom>");
         imsmd = sb.toString();
     }
-    
+
     @Test
     public void testTransform() throws Exception {
     	Crosswalk xwalk = new ImsmdToOaidc();
     	InputStream in = new ByteArrayInputStream(imsmd.getBytes("UTF-8"));
     	OutputStream out = new ByteArrayOutputStream();
     	xwalk.translate("imsmd", in, "oai_dc", out);
-    	
+
     	validate(new StreamSource(new StringReader(out.toString())));
     }
 

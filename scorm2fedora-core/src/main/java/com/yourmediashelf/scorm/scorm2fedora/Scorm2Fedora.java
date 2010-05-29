@@ -1,8 +1,8 @@
 package com.yourmediashelf.scorm.scorm2fedora;
 
-import static com.yourmediashelf.fedora.client.request.FedoraRequest.addDatastream;
-import static com.yourmediashelf.fedora.client.request.FedoraRequest.ingest;
-import static com.yourmediashelf.fedora.client.request.FedoraRequest.modifyDatastream;
+import static com.yourmediashelf.fedora.client.FedoraClient.addDatastream;
+import static com.yourmediashelf.fedora.client.FedoraClient.ingest;
+import static com.yourmediashelf.fedora.client.FedoraClient.modifyDatastream;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -20,7 +20,6 @@ import java.util.Set;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-import com.sun.jersey.api.client.ClientResponse;
 import com.yourmediashelf.crosswalk.Crosswalk;
 import com.yourmediashelf.crosswalk.CrosswalkException;
 import com.yourmediashelf.crosswalk.impl.ImsmdToOaidc;
@@ -28,7 +27,7 @@ import com.yourmediashelf.fedora.client.FedoraClient;
 import com.yourmediashelf.fedora.client.FedoraClientException;
 import com.yourmediashelf.fedora.client.FedoraCredentials;
 import com.yourmediashelf.fedora.client.RelsExt;
-import com.yourmediashelf.fedora.client.request.FedoraRequest;
+import com.yourmediashelf.fedora.client.response.IngestResponse;
 import com.yourmediashelf.util.FileUtils;
 
 /**
@@ -142,33 +141,38 @@ public class Scorm2Fedora {
 
 			// create new fedora object
 			String namespace = props.getProperty("namespace");
-			FedoraRequest ingest = ingest(pid).namespace(namespace).build();
-			ClientResponse response = fedora.execute(ingest);
+			IngestResponse response = ingest(pid).namespace(namespace).execute(fedora);
 
-			pid = response.getEntity(String.class);
+			pid = response.getPid();
 			location = response.getLocation();
 
 			// add original scorm package as datastream
 			String dsId = props.getProperty("scorm.dsid", "SCORM");
-			FedoraRequest addScorm = addDatastream(pid, dsId)
-			    .controlGroup("M").dsLabel(filename).content(scorm).build();
-			fedora.execute(addScorm);
+			addDatastream(pid, dsId).controlGroup("M")
+			                        .dsLabel(filename)
+			                        .content(scorm).execute(fedora);
 
 			// update DC datastream with new oai_dc
-			fedora.execute(modifyDatastream(pid, "DC").content(oaidc).build());
+			modifyDatastream(pid, "DC").content(oaidc).execute(fedora);
 
 			// Add content model to RELS-EXT
 			String cmodel = props.getProperty("cmodel");
-			String relsExt = new RelsExt.Builder(pid).cmodel(cmodel).build().toString();
-			FedoraRequest addRelsExt = addDatastream(pid, "RELS-EXT")
-			    .dsLabel("RDF Statements about this object")
-			    .formatURI("info:fedora/fedora-system:FedoraRELSExt-1.0")
-			    .mimeType("application/rdf+xml").content(relsExt).build();
-			fedora.execute(addRelsExt);
+			if (cmodel != null) {
+    			String relsExt = new RelsExt.Builder(pid).addCModel(cmodel).build().toString();
+    			addDatastream(pid, "RELS-EXT")
+    			    .dsLabel("RDF Statements about this object")
+    			    .formatURI("info:fedora/fedora-system:FedoraRELSExt-1.0")
+    			    .mimeType("application/rdf+xml").content(relsExt)
+    			    .execute(fedora);
+    			logger.debug("Created RELS-EXT with cmodel \"{}\".", cmodel);
+			} else {
+			    logger.info("Property \"cmodel\" not found. Skipping RELS-EXT.");
+			}
 
 		} finally {
 			for (File f : tempFiles) {
 				f.delete();
+				logger.debug("Deleted temp file \"{}\".", f.getAbsolutePath());
 			}
 		}
 		return new ScormDeposit(pid, location);
