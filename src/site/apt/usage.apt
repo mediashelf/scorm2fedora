@@ -18,6 +18,14 @@ container, SCORM packages can be submitted using HTTP POST requests to the
 scorm2fedora service endpoint (e.g. http://example.org:8080/scorm2fedora). 
 That's it!
 
+    The JSON response contains the pid and location of the newly created
+Fedora object, e.g.:
+
++--
+{"pid":"scorm:1","location":"http://localhost:8080/fedora/objects/scorm%3A1"}
++--
+
+
 * Configuration
 
     Scorm2Fedora supports configuration by web.xml init-params and Java 
