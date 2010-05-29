@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.yourmediashelf.scorm</groupId>
   <artifactId>scorm2fedora</artifactId>
@@ -8,7 +9,8 @@
 
   <name>Scorm2Fedora Web Service</name>
   <url>http://mediashelf.github.com/scorm2fedora</url>
-  <description>A web service that deposits SCORM packages in a Fedora repository.</description>
+  <description>A web service that deposits SCORM packages in a Fedora
+    repository.</description>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -132,12 +134,14 @@
     <repository>
       <id>duraspace-thirdparty</id>
       <name>Duraspace Thirdparty Maven Repository</name>
-      <url>https://fedora-commons.org/m2/content/repositories/thirdparty</url>
+      <url>https://fedora-commons.org/m2/content/repositories/thirdparty
+      </url>
     </repository>
     <snapshotRepository>
       <id>duraspace-snapshots</id>
       <name>DuraSpace Snapshots Maven Repository</name>
-      <url>https://fedora-commons.org/m2/content/repositories/snapshots</url>
+      <url>https://fedora-commons.org/m2/content/repositories/snapshots
+      </url>
     </snapshotRepository>
     <site>
       <!--
@@ -165,11 +169,14 @@
         <version>2.5</version>
         <configuration>
           <systemPropertyVariables>
-            <fedora.test.baseUrl>https://localhost:8443/fedora</fedora.test.baseUrl>
+            <fedora.test.baseUrl>https://localhost:8443/fedora
+            </fedora.test.baseUrl>
             <fedora.test.username>fedoraAdmin</fedora.test.username>
             <fedora.test.password>fedoraAdmin</fedora.test.password>
-            <javax.net.ssl.trustStore>/opt/fedora/current/server/truststore</javax.net.ssl.trustStore>
-            <javax.net.ssl.trustStorePassword>tomcat</javax.net.ssl.trustStorePassword>
+            <javax.net.ssl.trustStore>/opt/fedora/current/server/truststore
+            </javax.net.ssl.trustStore>
+            <javax.net.ssl.trustStorePassword>tomcat
+            </javax.net.ssl.trustStorePassword>
           </systemPropertyVariables>
         </configuration>
       </plugin>
@@ -210,23 +217,40 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>2.7</version>
+        <reportSets>
+          <reportSet>
+            <configuration>
+              <encoding>UTF-8</encoding>
+            </configuration>
+            <reports>
+              <report>aggregate</report>
+            </reports>
+          </reportSet>
+        </reportSets>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jxr-plugin</artifactId>
         <version>2.1</version>
+        <configuration>
+          <aggregate>true</aggregate>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
         <version>2.5</version>
+        <configuration>
+          <aggregate>true</aggregate>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-changelog-plugin</artifactId>
         <version>2.2</version>
         <configuration>
-          <displayFileDetailUrl>http://github.com/mediashelf/fedora-client/blob/master/%FILE%</displayFileDetailUrl>
+          <displayFileDetailUrl>http://github.com/mediashelf/fedora-client/blob/master/%FILE%
+          </displayFileDetailUrl>
         </configuration>
       </plugin>
       <plugin>
@@ -246,7 +270,8 @@
     <repository>
       <id>duraspace-thirdparty</id>
       <name>Duraspace Thirdparty Maven Repository</name>
-      <url>https://fedora-commons.org/m2/content/repositories/thirdparty</url>
+      <url>https://fedora-commons.org/m2/content/repositories/thirdparty
+      </url>
     </repository>
   </repositories>
 </project>
