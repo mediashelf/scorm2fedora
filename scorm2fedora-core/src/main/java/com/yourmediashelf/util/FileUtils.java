@@ -7,22 +7,22 @@ import java.io.OutputStream;
 
 public class FileUtils {
 private static final int BUFF_SIZE = 100000;
-    
+
     /**
      * A static 100K buffer used by the copy operation.
      */
     private static final byte[] buffer = new byte[BUFF_SIZE];
 
     /**
-     * Copy an InputStream to an OutputStream. 
+     * Copy an InputStream to an OutputStream.
      * While this method will automatically close the destination OutputStream,
      * the caller is responsible for closing the source InputStream.
-     * 
+     *
      * @param source
      * @param destination
      * @return <code>true</code> if the operation was successful;
      *         <code>false</code> otherwise (which includes a null input).
-     * @see http://java.sun.com/docs/books/performance/1st_edition/html/JPIOPerformance.fm.html#22980
+     * @see "http://java.sun.com/docs/books/performance/1st_edition/html/JPIOPerformance.fm.html#22980"
      */
     public static boolean copy(InputStream source, OutputStream destination) {
         try {
