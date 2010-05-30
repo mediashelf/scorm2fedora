@@ -249,7 +249,7 @@
         <artifactId>maven-changelog-plugin</artifactId>
         <version>2.2</version>
         <configuration>
-          <displayFileDetailUrl>http://github.com/mediashelf/fedora-client/blob/master/%FILE%
+          <displayFileDetailUrl>http://github.com/mediashelf/scorm2fedora/blob/master/%FILE%
           </displayFileDetailUrl>
         </configuration>
       </plugin>
